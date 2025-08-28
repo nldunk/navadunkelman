@@ -243,4 +243,54 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
+    
+    // Load and render shows if we're on the shows page
+    loadShows();
 });
+
+// Function to load and render shows
+function loadShows() {
+    const upcomingShowsContainer = document.getElementById('upcoming-shows');
+    const pastShowsContainer = document.getElementById('past-shows');
+    
+    if (!upcomingShowsContainer || !pastShowsContainer) {
+        return; // Not on shows page
+    }
+    
+    // Check if showsData is available (loaded from shows.js)
+    if (typeof showsData === 'undefined') {
+        console.error('Shows data not loaded. Make sure shows.js is included.');
+        return;
+    }
+    
+    // Render upcoming shows
+    if (showsData.upcoming && showsData.upcoming.length > 0) {
+        upcomingShowsContainer.innerHTML = showsData.upcoming.map(show => createShowHTML(show)).join('');
+    } else {
+        upcomingShowsContainer.innerHTML = '<p class="no-shows">No upcoming shows scheduled</p>';
+    }
+    
+    // Render past shows
+    if (showsData.past && showsData.past.length > 0) {
+        pastShowsContainer.innerHTML = showsData.past.map(show => createShowHTML(show)).join('');
+    } else {
+        pastShowsContainer.innerHTML = '<p class="no-shows">No past shows to display</p>';
+    }
+}
+
+// Function to create HTML for a single show
+function createShowHTML(show) {
+    let html = `
+        <div class="show-entry">
+            <div class="show-date-time">${show.date}, ${show.time}</div>
+            <div class="show-title">${show.title}</div>
+            <div class="show-location">${show.location}`;
+    
+    if (show.moreInfo) {
+        html += `<a href="${show.moreInfo}" target="_blank" class="more-info-link">more info</a>`;
+    }
+    
+    html += `</div></div>`;
+    
+    return html;
+}

@@ -38,7 +38,7 @@ A clean, modern portfolio website for percussionist and improviser Nava Dunkelma
 - **HTML5**: Semantic markup and accessibility
 - **CSS3**: Modern CSS with Grid, Flexbox, and animations
 - **Vanilla JavaScript**: No frameworks or libraries
-- **Google Fonts**: Jockey One, Forum, and Enriqueta
+- **Google Fonts**: Forum (serif font)
 
 ## Getting Started
 
@@ -75,9 +75,7 @@ The main color scheme is defined in `styles.css`:
 
 ### Fonts
 Google Fonts are used and can be changed in the HTML head section:
-- Headings: Jockey One
-- Body: Forum
-- Accent: Enriqueta
+- All text: Forum (serif font for elegant, consistent typography)
 
 ### Images
 Replace image URLs in the HTML files with your own images. The current images are from the original Wix site.

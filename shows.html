@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Forum&family=Enriqueta:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -53,60 +53,18 @@
         <!-- Shows Section -->
         <section class="shows-section">
             <div class="container">
-                <h2 class="section-title fade-in">Upcoming Shows</h2>
-                <div class="shows-grid">
-                    <div class="show-card fade-in">
-                        <div class="show-date">
-                            <span class="month">Dec</span>
-                            <span class="day">15</span>
-                        </div>
-                        <div class="show-details">
-                            <h3>Experimental Music Night</h3>
-                            <p class="venue">The Lab, San Francisco</p>
-                            <p class="time">8:00 PM</p>
-                            <p class="description">Solo percussion performance featuring new works</p>
+                <div class="shows-content">
+                    <div class="shows-column">
+                        <h2 class="shows-heading">upcoming:</h2>
+                        <div id="upcoming-shows" class="shows-list">
+                            <!-- Shows will be loaded dynamically -->
                         </div>
                     </div>
                     
-                    <div class="show-card fade-in">
-                        <div class="show-date">
-                            <span class="month">Dec</span>
-                            <span class="day">22</span>
-                        </div>
-                        <div class="show-details">
-                            <h3>Dapplegray Collective</h3>
-                            <p class="venue">Berkeley Art Center</p>
-                            <p class="time">7:30 PM</p>
-                            <p class="description">Group improvisation and collaborative works</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <h2 class="section-title fade-in">Past Shows</h2>
-                <div class="shows-grid">
-                    <div class="show-card past fade-in">
-                        <div class="show-date">
-                            <span class="month">Nov</span>
-                            <span class="day">10</span>
-                        </div>
-                        <div class="show-details">
-                            <h3>IMA Performance</h3>
-                            <p class="venue">Mills College, Oakland</p>
-                            <p class="time">6:00 PM</p>
-                            <p class="description">Premiere of new experimental composition</p>
-                        </div>
-                    </div>
-                    
-                    <div class="show-card past fade-in">
-                        <div class="show-date">
-                            <span class="month">Oct</span>
-                            <span class="day">28</span>
-                        </div>
-                        <div class="show-details">
-                            <h3>NOMON Project</h3>
-                            <p class="venue">Center for New Music, SF</p>
-                            <p class="time">8:00 PM</p>
-                            <p class="description">Collaborative performance with visual artists</p>
+                    <div class="shows-column">
+                        <h2 class="shows-heading">past</h2>
+                        <div id="past-shows" class="shows-list">
+                            <!-- Past shows will be loaded dynamically -->
                         </div>
                     </div>
                 </div>
@@ -146,6 +104,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="shows.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
