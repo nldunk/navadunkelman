@@ -65,9 +65,9 @@ a:hover {
 }
 
 .logo h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #8B0000;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     font-family: 'Forum', serif;
     font-weight: 700;
     margin: 0;
@@ -96,14 +96,14 @@ a:hover {
     font-weight: 400;
     letter-spacing: 0.05em;
     position: relative;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 2.5rem;
     color: #555;
     transition: color 0.3s ease;
 }
 
-.nav-link:not(:last-child)::after {
+.nav-list li:not(:last-child)::after {
     content: '|';
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     color: #ccc;
     font-weight: 300;
 }
@@ -258,28 +258,37 @@ a:hover {
 
 /* About Section */
 .about-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: #fff;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    gap: 0;
+    align-items: start;
 }
 
-.about-text h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    color: #333;
+.about-text {
+    margin-left: -2rem;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 0.9375rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: #555;
+}
+
+.about-text a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+    color: #666;
 }
 
 .about-image {
@@ -288,15 +297,17 @@ a:hover {
 
 .about-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: none !important;
+    transform: none !important;
 }
 
 .about-img:hover {
-    transform: scale(1.02);
+    transform: none !important;
+    scale: none !important;
 }
 
 /* Section Titles */
