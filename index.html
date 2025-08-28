@@ -1,11 +1,43 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nava Dunkelman</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first GitHub Pages site.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Nava Dunkelman</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    body{font-family: system-ui, -apple-system, Arial; margin:40px; line-height:1.5;}
+    header{max-width:880px;margin:auto}
+    nav a{margin-right:16px;text-decoration:none}
+    img{max-width:100%;height:auto}
+    .wrap{max-width:880px;margin:40px auto}
+    footer{margin-top:64px;font-size:.9em;opacity:.7}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nava Dunkelman</h1>
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#projects">Projects</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="bio"><h2>Bio</h2><p>Short bio goes here…</p></section>
+    <section id="projects"><h2>Projects</h2><ul><li>Arrhythmia</li><li>NOMON</li></ul></section>
+    <section id="media"><h2>Media</h2>
+      <!-- Paste YouTube/Vimeo links; they don't count toward storage -->
+      <p><a href="https://youtu.be/XXXXXXXX">Performance clip</a></p>
+    </section>
+    <section id="contact"><h2>Contact</h2>
+      <p>Email: you@example.com • Instagram: @nldunk</p>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Nava Dunkelman</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
 </html>
