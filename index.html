@@ -2,42 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Nava Dunkelman</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nava Dunkelman – Percussionist</title>
+  <meta name="description" content="Nava Dunkelman – percussionist, composer, and collaborator. Projects include Arrhythmia and NOMON." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    body{font-family: system-ui, -apple-system, Arial; margin:40px; line-height:1.5;}
-    header{max-width:880px;margin:auto}
-    nav a{margin-right:16px;text-decoration:none}
-    img{max-width:100%;height:auto}
-    .wrap{max-width:880px;margin:40px auto}
-    footer{margin-top:64px;font-size:.9em;opacity:.7}
+    :root{
+      --bg:#0b0b0c; --fg:#e9e9ee; --sub:#b8b8c5; --accent:#7fd5ff; --muted:#2a2a31;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:var(--fg);text-decoration:none}
+    a:hover{color:var(--accent)}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(11,11,12,.95),rgba(11,11,12,.75));backdrop-filter:saturate(140%) blur(6px);}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.5px}
+    .menu{display:flex;gap:22px}
+    .menu a{font-weight:600;opacity:.9}
+    .menu a.active{color:var(--accent)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:999px;background:var(--muted);}
+    .btn.primary{background:var(--accent);color:#081018;font-weight:700}
+
+    .hero{padding:96px 0 60px;border-bottom:1px solid #16161b}
+    .hero h1{font-size:46px;line-height:1.05;margin:0 0 14px}
+    .hero p{color:var(--sub);max-width:780px}
+    .hero .tags{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+    .tag{padding:6px 10px;border:1px solid #1d1d24;border-radius:999px;color:#d6d6e2;font-size:13px}
+
+    section{padding:56px 0;border-bottom:1px solid #16161b}
+    section h2{margin:0 0 20px;font-size:28px}
+
+    /* Bio */
+    .bio{display:grid;grid-template-columns:1.3fr .8fr;gap:28px}
+    .bio img{width:100%;border-radius:16px;border:1px solid #20202a}
+    .bio p{color:#d6d6e2}
+
+    /* Projects */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#111117;border:1px solid #1e1e28;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px}
+    .card h3{margin:0}
+    .pill{font-size:12px;color:#bfc3d6;border:1px solid #2a2a36;border-radius:999px;padding:4px 8px;align-self:flex-start}
+
+    /* Media */
+    .embed{aspect-ratio:16/9;width:100%;border:0;border-radius:12px;overflow:hidden;background:#0f0f15;border:1px solid #1d1d28}
+    .media-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+
+    /* Press list */
+    .press{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .press a{display:block;padding:12px 14px;border:1px solid #1e1e28;border-radius:12px;background:#101018;color:#dcdcec}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+    .list li{padding:12px 14px;border:1px dashed #242432;border-radius:12px;color:#dcdcec}
+
+    footer{padding:60px 0;color:#9b9bb0;text-align:center}
+
+    @media (max-width:980px){
+      .bio,.media-grid,.contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:640px){
+      .hero h1{font-size:36px}
+      .grid{grid-template-columns:1fr}
+      .menu{display:none}
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Nava Dunkelman</h1>
-    <nav>
-      <a href="#bio">Bio</a>
-      <a href="#projects">Projects</a>
-      <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container nav">
+      <a class="brand" href="#top">NAVA DUNKELMAN</a>
+      <nav class="menu">
+        <a href="#bio" class="active">Bio</a>
+        <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
+        <a href="#press">Press</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <section id="bio"><h2>Bio</h2><p>Short bio goes here…</p></section>
-    <section id="projects"><h2>Projects</h2><ul><li>Arrhythmia</li><li>NOMON</li></ul></section>
-    <section id="media"><h2>Media</h2>
-      <!-- Paste YouTube/Vimeo links; they don't count toward storage -->
-      <p><a href="https://youtu.be/XXXXXXXX">Performance clip</a></p>
+  <main id="top">
+    <section class="hero container">
+      <h1>Percussionist • Composer • Collaborator</h1>
+      <p>Brooklyn‑based percussionist and improviser exploring tension/release, pulse, and movement. Current projects include <strong>Arrhythmia</strong> and <strong>NOMON</strong>.</p>
+      <div class="tags">
+        <span class="tag">Electro‑percussion</span>
+        <span class="tag">Improvisation</span>
+        <span class="tag">Interdisciplinary</span>
+      </div>
     </section>
-    <section id="contact"><h2>Contact</h2>
-      <p>Email: you@example.com • Instagram: @nldunk</p>
+
+    <section id="bio" class="container">
+      <h2>Bio</h2>
+      <div class="bio">
+        <div>
+          <p><!-- Replace with your real bio text -->
+          Nava Dunkelman is a percussionist, composer, and collaborator. Recent performances include Roulette (NYC), Monheim Triennale (DE), and projects with Du Yun’s Ok Miss. Nava’s work blends acoustic and electronic textures to sculpt immersive rhythmic narratives.
+          </p>
+          <p>
+          <a class="btn" href="#contact">Booking / Contact</a>
+          </p>
+        </div>
+        <div>
+          <!-- Replace the src with your image path once uploaded to the repo -->
+          <img alt="Nava performing" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="pill">Solo</span>
+          <h3>Arrhythmia</h3>
+          <p>Solo electro‑percussion performance exploring heartbeat, breath, and irregular pulse.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+        <article class="card">
+          <span class="pill">Duo</span>
+          <h3>NOMON</h3>
+          <p>Electro‑percussion duo with Shayna Dunkelman. New album release in 2025.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+        <article class="card">
+          <span class="pill">Collab</span>
+          <h3>Ok Miss / Ensembles</h3>
+          <p>Guest appearances and festival collaborations including Vision Festival and more.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="media" class="container">
+      <h2>Media</h2>
+      <div class="media-grid">
+        <div>
+          <!-- YouTube/Vimeo embed (replace src with your real link) -->
+          <iframe class="embed" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Performance video" allowfullscreen></iframe>
+        </div>
+        <div>
+          <!-- Bandcamp/SoundCloud embed example -->
+          <iframe class="embed" src="https://bandcamp.com/EmbeddedPlayer/album=0000000/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" title="Bandcamp embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="press" class="container">
+      <h2>Press / Highlights</h2>
+      <div class="press">
+        <a href="#">“A riveting exploration of rhythm and space.” — Publication</a>
+        <a href="#">Interview with Nava Dunkelman — Magazine</a>
+        <a href="#">NOMON live review — Blog</a>
+        <a href="#">Artist spotlight — Radio</a>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <div class="contact">
+        <ul class="list">
+          <li>Email: <a href="mailto:booking@navadunkelman.com">booking@navadunkelman.com</a></li>
+          <li>Instagram: <a href="https://instagram.com/nldunk" target="_blank" rel="noopener">@nldunk</a></li>
+          <li>Press kit: <a href="#">Download EPK (PDF)</a></li>
+        </ul>
+        <div>
+          <p>For performances, commissions, and teaching inquiries, please get in touch. Based in Brooklyn, available for international dates.</p>
+          <a class="btn primary" href="mailto:booking@navadunkelman.com">Email me</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>© <span id="y"></span> Nava Dunkelman</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <footer>
+    <div class="container">© <span id="y"></span> Nava Dunkelman • Built with GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // small enhancement: mark active nav while scrolling
+    const links = document.querySelectorAll('.menu a');
+    const sections = [...links].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const onScroll = () => {
+      const y = window.scrollY + 100;
+      let active = links[0];
+      sections.forEach((sec, i) => {
+        if (sec.offsetTop <= y) active = links[i];
+      });
+      links.forEach(l => l.classList.remove('active'));
+      active.classList.add('active');
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
 </body>
 </html>
