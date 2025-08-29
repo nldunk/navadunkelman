@@ -317,19 +317,27 @@ function loadMedia() {
     const mediaVideosContainer = document.getElementById('media-videos');
     
     if (!mediaVideosContainer) {
+        console.log('Media container not found - not on media page');
         return; // Not on media page
     }
+    
+    console.log('Media container found, loading media...');
     
     // Check if mediaData is available (loaded from media.js)
     if (typeof mediaData === 'undefined') {
         console.error('Media data not loaded. Make sure media.js is included.');
+        mediaVideosContainer.innerHTML = '<p class="no-media">Error: Media data not loaded</p>';
         return;
     }
     
+    console.log('Media data found:', mediaData);
+    
     // Render videos
     if (mediaData.videos && mediaData.videos.length > 0) {
+        console.log('Rendering', mediaData.videos.length, 'videos');
         mediaVideosContainer.innerHTML = mediaData.videos.map(video => createVideoHTML(video)).join('');
     } else {
+        console.log('No videos found in data');
         mediaVideosContainer.innerHTML = '<p class="no-media">No videos available</p>';
     }
 }
@@ -338,8 +346,16 @@ function loadMedia() {
 function createVideoHTML(video) {
     let html = `
         <div class="media-video-item">
-            <div class="media-video-title">${video.title}</div>
-            <div class="media-video-description">${video.description}</div>`;
+            <div class="media-video-left">
+                <!-- Video embed or placeholder -->
+                ${video.videoEmbed && video.videoEmbed !== '<!-- Add your YouTube or Vimeo embed code here -->' 
+                    ? `<div class="media-video-embed">${video.videoEmbed}</div>`
+                    : `<div class="media-video-placeholder">Video embed code needed - add YouTube or Vimeo embed in media.js</div>`
+                }
+            </div>
+            <div class="media-video-right">
+                <div class="media-video-title">${video.title}</div>
+                <div class="media-video-description">${video.description}</div>`;
     
     if (video.details) {
         html += `<div class="media-video-details">${video.details}</div>`;
@@ -353,14 +369,7 @@ function createVideoHTML(video) {
         html += `<div class="media-video-date">${video.date}</div>`;
     }
     
-    // Add video embed or placeholder
-    if (video.videoEmbed && video.videoEmbed !== '<!-- Add your YouTube or Vimeo embed code here -->') {
-        html += `<div class="media-video-embed">${video.videoEmbed}</div>`;
-    } else {
-        html += `<div class="media-video-placeholder">Video embed code needed - add YouTube or Vimeo embed in media.js</div>`;
-    }
-    
-    html += `</div>`;
+    html += `</div></div>`;
     
     return html;
 }
