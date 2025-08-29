@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMA - Nava Dunkelman</title>
-    <meta name="description" content="IMA - electro-percussion experimental noise duo with Amma Ateria">
+    <meta name="description" content="IMA - electro-percussion project featuring Nava Dunkelman and Amma Ateria">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,76 @@
         /* Critical styles for above-the-fold content */
         body { font-family: 'Forum', serif; margin: 0; padding: 0; }
         .header { background: transparent; padding: 2rem 0 1rem 0; }
-        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
+        .logo h1 { font-size: 3rem; color: #333; margin: 0; }
         .nav-list { display: flex; list-style: none; gap: 0; }
+        
+        /* Website button styles - restored to original */
+        .website-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: white !important;
+            color: #333 !important;
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            border: 1px solid #333 !important;
+            transition: all 0.3s ease;
+            font-family: 'Forum', serif;
+        }
+        
+        /* More specific override */
+        .ima-links .website-btn {
+            color: #333 !important;
+            border-color: #333 !important;
+        }
+        
+        .website-btn:hover {
+            background: #8B0000 !important;
+            color: white !important;
+        }
+        
+        /* More specific hover override */
+        .ima-links .website-btn:hover {
+            color: white !important;
+        }
+        
+        /* Align button and icon on same line */
+        .ima-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .website-btn {
+            vertical-align: middle;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* Social icon hover effects */
+        .social-icon {
+            transition: transform 0.3s ease !important;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.5) !important;
+        }
+        
+        /* Preserve original formatting */
+        .about-text p {
+            font-size: 0.9375rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .website-btn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
     </style>
     
     <!-- CSS -->
@@ -60,11 +128,30 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <section class="project-section">
-            <div class="project-content">
-                <h1>IMA</h1>
-                <p>IMA is an electro-percussion experimental noise duo featuring Nava Dunkelman and Amma Ateria.</p>
-                <p>Visit <a href="https://www.imanoise.me/" target="_blank" rel="noopener noreferrer">www.imanoise.me</a> for more information.</p>
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/IMA_SUNSET.JPG" alt="IMA Project" class="about-img">
+                        <div class="photo-credit">Photo by IMA</div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h2>IMA</h2>
+                        <p>IMA [ii-ma] 今. 瞬間.</p>
+                        
+                        <p>IMA is the electro-percussion project of electronic sound artist Amma Ateria, (HK) and percussionist Nava Dunkelman (JP) based in California and New York. Through restraint and release, IMA depicts expressionistic noise music of Japanese poetry with the meticulous industrial and serene. Striving for a balance between precision of instrumentation, filmic transitions between silence and densities are driven to brinks of breakage, situated by beautification in between. IMA marches forth with starkness and surrender into the aftermath of destruction, and attempt for transformative regeneration of beauty through catalysts of pleasure.</p>
+                        
+                        <p>The duo were presented in residency at The Stone, NYC (2016), San Francisco Electronic Music Festival, SF (2016), San Francisco Art Institute (2018), CCRMA, Stanford University (2018), Other Minds:Latitudes (2019). Performed and collaborated with Ikue Mori, Pauchi Sasaki, Fred Frith, John Zorn, Matmos, Zeena Parkins, Erik Friedlander, Brian Chase, and many others.</p>
+                        <div class="ima-links">
+                            <a href="https://imanoise.me" target="_blank" rel="noopener noreferrer" class="website-btn" style="color: #333 !important; border-color: #333 !important;">WEBSITE</a>
+                            <a href="https://www.instagram.com/ima.noise" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <img src="images/gray_instagram_icon.png" alt="Instagram" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -88,6 +175,20 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+    <script>
+        // Force button hover colors
+        document.addEventListener('DOMContentLoaded', function() {
+            const websiteBtn = document.querySelector('.website-btn');
+            if (websiteBtn) {
+                websiteBtn.addEventListener('mouseenter', function() {
+                    this.style.color = 'white';
+                });
+                websiteBtn.addEventListener('mouseleave', function() {
+                    this.style.color = '#333';
+                });
+            }
+        });
+    </script>
 </body>
 </html>

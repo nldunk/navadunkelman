@@ -307,8 +307,8 @@ a:hover {
 }
 
 .social-icon:hover {
-    transform: none !important;
-    scale: none !important;
+    transform: scale(1.2) !important;
+    transition: transform 0.3s ease;
 }
 
 .social-icon:focus {
@@ -352,10 +352,13 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .about-text {
-    margin-left: -2rem;
+    margin-left: 0;
 }
 
 .about-text p {
@@ -374,6 +377,37 @@ a:hover {
 
 .about-text a:hover {
     color: #666;
+}
+
+/* IMA Project Page Specific Styles */
+.ima-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.website-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: white !important;
+    color: #8B0000 !important;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    border: 1px solid #8B0000 !important;
+    transition: all 0.3s ease;
+    font-family: 'Forum', serif;
+}
+
+.website-btn:hover {
+    background: #8B0000 !important;
+    color: white !important;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
 }
 
 .about-image {

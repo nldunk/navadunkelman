@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOMON - Nava Dunkelman</title>
-    <meta name="description" content="NOMON - percussion duo with Shayna Dunkelman">
+    <meta name="description" content="NOMON - percussion duo featuring Shayna and Nava Dunkelman">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,83 @@
         /* Critical styles for above-the-fold content */
         body { font-family: 'Forum', serif; margin: 0; padding: 0; }
         .header { background: transparent; padding: 2rem 0 1rem 0; }
-        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
+        .logo h1 { font-size: 3rem; color: #333; margin: 0; }
         .nav-list { display: flex; list-style: none; gap: 0; }
+        
+        /* Website button styles - restored to original */
+        .website-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: white !important;
+            color: #333 !important;
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            border: 1px solid #333 !important;
+            transition: all 0.3s ease;
+            font-family: 'Forum', serif;
+        }
+        
+        .website-btn:hover {
+            background: #8B0000 !important;
+            color: white !important;
+        }
+        
+        /* More specific hover override */
+        .ima-links .website-btn:hover {
+            color: white !important;
+        }
+        
+        /* Align button and icon on same line */
+        .ima-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .website-btn {
+            vertical-align: middle;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* Social icon hover effects */
+        .social-icon {
+            transition: transform 0.3s ease !important;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.5) !important;
+        }
+        
+        /* Preserve original formatting */
+        .about-text p {
+            font-size: 0.9375rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .website-btn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        /* NOMON specific styles */
+        .nomon-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+        }
     </style>
     
     <!-- CSS -->
@@ -60,12 +135,36 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <section class="project-section">
-            <div class="project-content">
-                <h1>NOMON</h1>
-                <p>NOMON is a percussion duo featuring Nava Dunkelman and her sister Shayna Dunkelman.</p>
-                <p>Listen to their music on <a href="https://nomonmusic.bandcamp.com/album/card-ii" target="_blank" rel="noopener noreferrer">Bandcamp</a>.</p>
-                <p>Visit <a href="https://www.shaynadunkelmanmusic.com/" target="_blank" rel="noopener noreferrer">Shayna's website</a> for more information.</p>
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/NOMON_bio.png" alt="NOMON Project" class="about-img">
+                        <div class="photo-credit">Photo: NOMON Project</div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h2>NOMON</h2>
+                        
+                        <p>Shayna and Nava Dunkelman, based in Brooklyn, NY, founded NOMON in 2018, uniting their diverse musical backgrounds. Raised in Tokyo with roots in Japan, Indonesia, and the US, the sisters began performing alongside their mother, an accomplished composer in Asia and the Middle East. Their percussion style is a choreographed interplay of hands, bodies, and a diverse array of instruments, merging visual and auditory elements seamlessly.</p>
+                        
+                        <p>NOMON's music merges electronic landscapes with intricate percussion. Drawing inspiration from industrial and avant-garde percussion, as well as their cultural heritage, their compositions also incorporate contemporary electronic influences. They combine drum machines, vocal samples, synth melodies, and modular synthesizers triggered by analog sensors with carefully selected percussion tones, creating a cohesive fusion of electronic and acoustic elements.</p>
+                        
+                        <p>NOMON has performed at prestigious venues and festivals including Whitney Museum of American Art, MoMA, Brooklyn Museum's First Saturday, Grey Area (hosted by CCA Wattis Institute for Contemporary Arts), and The Green Space (WNYC, NY). Their innovative approach earned them the NYFA Women's Fund in 2023.</p>
+                        
+                        <p>Shayna and Nava continue to push boundaries in their exploration of sound, forging a unique artistic identity that resonates across genres and cultures.</p>
+                        
+                        <div class="nomon-links">
+                            <a href="https://navadunkelman.bandcamp.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <img src="images/bandcamp-button-bc-circle-grey/bandcamp-button-bc-circle-grey-64.png" alt="Bandcamp" class="social-icon">
+                            </a>
+                            <a href="https://www.instagram.com/nomon.noise" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <img src="images/gray_instagram_icon.png" alt="Instagram" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -89,6 +188,20 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+    <script>
+        // Force button hover colors
+        document.addEventListener('DOMContentLoaded', function() {
+            const websiteBtn = document.querySelector('.website-btn');
+            if (websiteBtn) {
+                websiteBtn.addEventListener('mouseenter', function() {
+                    this.style.color = 'white';
+                });
+                websiteBtn.addEventListener('mouseleave', function() {
+                    this.style.color = '#333';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
