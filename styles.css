@@ -410,24 +410,31 @@ a:hover {
 }
 
 .shows-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.shows-column {
+.shows-header {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
-.shows-heading {
-    font-size: 1.5rem;
-    font-weight: 400;
+.shows-label {
+    font-size: 0.9375rem;
     color: #333;
-    margin-bottom: 2rem;
-    text-transform: lowercase;
     font-family: 'Forum', serif;
+    font-weight: 400;
+}
+
+.shows-year {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .shows-list {
@@ -441,25 +448,27 @@ a:hover {
 }
 
 .show-date-time {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     color: #333;
     margin-bottom: 0.5rem;
     font-family: 'Forum', serif;
+    font-weight: 400;
 }
 
 .show-title {
-    font-size: 1.1rem;
+    font-size: 0.9375rem;
     color: #8B0000;
     margin-bottom: 0.5rem;
     font-family: 'Forum', serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .show-location {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9375rem;
+    color: #333;
     margin-bottom: 0.5rem;
     font-family: 'Forum', serif;
+    font-weight: 400;
 }
 
 .show-location::before {
@@ -470,7 +479,7 @@ a:hover {
 .more-info-link {
     color: #8B0000;
     text-decoration: underline;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
     margin-left: 0.5rem;
     transition: color 0.3s ease;
 }
@@ -482,7 +491,7 @@ a:hover {
 .no-shows {
     color: #888;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 }
 
 /* Contact Section */

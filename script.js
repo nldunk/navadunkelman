@@ -273,9 +273,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to load and render shows
 function loadShows() {
     const upcomingShowsContainer = document.getElementById('upcoming-shows');
-    const pastShowsContainer = document.getElementById('past-shows');
     
-    if (!upcomingShowsContainer || !pastShowsContainer) {
+    if (!upcomingShowsContainer) {
         return; // Not on shows page
     }
     
@@ -290,13 +289,6 @@ function loadShows() {
         upcomingShowsContainer.innerHTML = showsData.upcoming.map(show => createShowHTML(show)).join('');
     } else {
         upcomingShowsContainer.innerHTML = '<p class="no-shows">No upcoming shows scheduled</p>';
-    }
-    
-    // Render past shows
-    if (showsData.past && showsData.past.length > 0) {
-        pastShowsContainer.innerHTML = showsData.past.map(show => createShowHTML(show)).join('');
-    } else {
-        pastShowsContainer.innerHTML = '<p class="no-shows">No past shows to display</p>';
     }
 }
 
