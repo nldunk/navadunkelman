@@ -38,7 +38,7 @@ const mediaData = {
             ],
             date: "June 10, 2024",
             venue: "Roulette, Brooklyn, NY",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sBfq-8OwJF4?si=sYFmbkqGvXD_-hMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video2"
         },
         {
@@ -47,14 +47,14 @@ const mediaData = {
             details: "Programmed by Diego Villalobos for The Wattis Institute",
             venue: "Hosted by The Lab at Gray Area, San Francisco, CA",
             date: "January 21, 2023",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/39JCgG4_XgM?si=Kr3tm-fT7sCw9ofC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video3"
         },
         {
             title: "IMA",
             description: "Performance @ The Wire 40 ESS Streaming Festival",
             date: "July 28, 2022",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/-4Iluj0xTXk?si=bR8EKVL6oUDdUFUF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video4"
         },
         {
@@ -62,7 +62,7 @@ const mediaData = {
             description: "Performance @ Brooklyn Conservatory of Music, Brooklyn, NY",
             details: "ISSUE Project Room NOMADIC SIGNALS series",
             date: "May 14, 2022",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe title="vimeo-player" src="https://player.vimeo.com/video/722292600?h=79799d2be5" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>',
             videoUrl: "https://example.com/video5"
         },
         {
@@ -70,7 +70,7 @@ const mediaData = {
             description: "Performance @ Mills College, Oakland, CA",
             details: "Music in the Fault Zone",
             date: "April 23, 2022",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe title="vimeo-player" src="https://player.vimeo.com/video/721138343?h=2e446cdc60" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>',
             videoUrl: "https://example.com/video6"
         },
         {
@@ -78,7 +78,7 @@ const mediaData = {
             description: "Performance @ Fridman Gallery, New York, NY",
             details: "Catalytic Sound NYC",
             date: "October 24, 2021",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
+            videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N9ja6jPaGmE?si=-vvNhnZ9d9ogPZOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video7"
         },
         {
