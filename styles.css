@@ -419,6 +419,7 @@ a:hover {
     display: flex;
     align-items: flex-start;
     gap: 4rem;
+    margin-left: 4rem;
 }
 
 .shows-label {
@@ -917,6 +918,7 @@ a:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
+        margin-left: 0;
     }
     
     .shows-main-content {
