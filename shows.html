@@ -20,7 +20,7 @@
         .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
         .nav-list { display: flex; list-style: none; gap: 0; }
         .shows-section { padding: 2rem 0; }
-        .shows-content { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+        .shows-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
     </style>
     
     <!-- CSS -->
@@ -65,12 +65,14 @@
         <!-- Shows Section -->
         <section class="shows-section">
             <div class="shows-content">
-                <div class="shows-header">
-                    <span class="shows-label">upcoming:</span>
-                    <span class="shows-year">2025</span>
-                </div>
-                <div id="upcoming-shows" class="shows-list">
-                    <!-- Shows will be loaded dynamically -->
+                <div class="shows-layout">
+                    <div class="shows-label">upcoming:</div>
+                    <div class="shows-main">
+                        <div class="shows-year">2025</div>
+                        <div id="upcoming-shows" class="shows-list">
+                            <!-- Shows will be loaded dynamically -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
