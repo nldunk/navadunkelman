@@ -19,22 +19,22 @@ const showsData = {
         {
             date: "October 12",
             time: "7:30PM",
-            title: "THE OCEAN ETCHED IN THE FOREST, With Du Yun's OK Miss",
+            title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
             location: "Beijing Music Festival, Beijing, China"
         },
         {
             date: "November 7",
             time: "2:00PM & 7:00PM",
-            title: "THE OCEAN ETCHED IN THE FOREST, With Du Yun's OK Miss",
+            title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
             location: "Lincoln Center, New York, NY",
-            moreInfo: "https://example.com/more-info"
+            moreInfo: "https://www.lincolncenter.org/series/lincoln-center-presents/the-ocean-etched-in-the-forest-890"
         },
         {
             date: "November 25",
             time: "6:30PM",
-            title: "CONTACT IMPROVISATION: Duo with Maria Takeuchi",
+            title: '<i>CONTACT IMPROVISATION</i> : Duo with Maria Takeuchi',
             location: "Open Arts Studio, Brooklyn, NY",
-            moreInfo: "https://example.com/contact-improvisation"
+            moreInfo: "https://chingichang.com/contact-improvisation-jam/2025/11/25/nava/maria"
         },
         {
             date: "December 3",
