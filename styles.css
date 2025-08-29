@@ -67,9 +67,9 @@ a:hover {
 .logo h1 {
     font-size: 3rem;
     color: #8B0000;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.001em;
     font-family: 'Forum', serif;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -77,10 +77,21 @@ a:hover {
     color: #666;
 }
 
+.logo a:focus {
+    outline: none;
+}
+
+.logo a:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
+}
+
 /* Navigation */
 .main-nav {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -101,7 +112,7 @@ a:hover {
     transition: color 0.3s ease;
 }
 
-.nav-list li:not(:last-child)::after {
+.nav-list > li:not(:last-child)::after {
     content: '|';
     margin-left: 1.5rem;
     color: #ccc;
@@ -112,6 +123,15 @@ a:hover {
     color: #8B0000;
 }
 
+.nav-link:focus {
+    outline: none;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
+}
+
 .nav-link.active {
     color: #FFB6C1;
 }
@@ -119,6 +139,7 @@ a:hover {
 /* Dropdown Menu */
 .dropdown {
     position: relative;
+    z-index: 1000;
 }
 
 .dropdown-menu {
@@ -127,15 +148,17 @@ a:hover {
     left: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 1rem 0;
-    min-width: 150px;
+    border: none;
+    border-radius: none;
+    padding: 0rem 0;
+    min-width: 120px;
+    width: 100%;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
     list-style: none;
+    z-index: 1000;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -150,8 +173,23 @@ a:hover {
 
 .dropdown-menu a {
     display: block;
-    padding: 0.5rem 0;
+    padding: 0rem 0;
     font-size: 0.9rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #8B0000;
+}
+
+.dropdown-menu a:focus {
+    outline: none;
+}
+
+.dropdown-menu a:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
 }
 
 /* Mobile Menu Toggle */
@@ -172,6 +210,15 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+.mobile-menu-toggle:focus {
+    outline: none;
+}
+
+.mobile-menu-toggle:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
+}
+
 /* Main Content */
 .main-content {
     margin-top: 0;
@@ -189,17 +236,24 @@ a:hover {
 
 .hero-image {
     position: relative;
-    max-width: 900px;
+    max-width: 700px;
     width: 100%;
     text-align: center;
 }
 
 .hero-img {
     width: 100%;
-    max-width: 900px;
+    max-width: 700px;
     height: auto;
     display: block;
     margin: 0 auto;
+    transition: none !important;
+    transform: none !important;
+}
+
+.hero-img:hover {
+    transform: none !important;
+    scale: none !important;
 }
 
 .photo-credit {
@@ -207,37 +261,60 @@ a:hover {
     margin-top: 1rem;
     text-align: right;
     color: #888;
-    font-size: 0.9rem;
-    font-style: italic;
+    font-size: 0.2rem !important;
+    font-style: normal;
+}
+
+/* Force photo credit font size */
+.photo-credit,
+.photo-credit * {
+    font-size: 0.8rem !important;
 }
 
 /* Social Media Bar */
 .social-bar {
-    background: #f8f8f8;
-    padding: 2rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 2rem;
+    top: 90%;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 0;
+    border-top: none;
+    z-index: 100;
 }
 
 .social-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: bottom;
     list-style: none;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+    width: 30px;
+    height: 30px;
+    transition: none !important;
+    transform: none !important;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+    transform: none !important;
+    scale: none !important;
+}
+
+.social-icon:focus {
+    outline: none;
+}
+
+.social-icon:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
 }
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #fff;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -518,6 +595,15 @@ a:hover {
     transform: translateY(-2px);
 }
 
+.submit-btn:focus {
+    outline: none;
+}
+
+.submit-btn:focus-visible {
+    outline: 2px solid #8B0000;
+    outline-offset: 2px;
+}
+
 .submit-btn:active {
     transform: translateY(0);
 }
@@ -551,8 +637,8 @@ a:hover {
         flex-direction: column;
         padding: 2rem;
         gap: 1rem;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        border: none;
+        border-radius: none;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
@@ -568,12 +654,12 @@ a:hover {
     
     .dropdown-menu {
         position: static;
-        opacity: 1;
+        opacity: none;
         visibility: visible;
         transform: none;
-        background: transparent;
+        background: #fff;
         border: none;
-        padding: 0.5rem 0 0 1rem;
+        padding: 0rem 0 0 1rem;
         min-width: auto;
     }
     
@@ -590,8 +676,8 @@ a:hover {
     }
     
     .social-icon {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
     
     .about-content {
@@ -659,8 +745,8 @@ a:hover {
     }
     
     .photo-credit {
-        font-size: 0.8rem;
         padding: 0.3rem 0.8rem;
+        font-size: 0.8rem !important;
     }
     
     .social-list {
@@ -693,7 +779,12 @@ html {
 /* Focus styles for accessibility */
 a:focus,
 button:focus {
-    outline: 2px solid #333;
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #8B0000;
     outline-offset: 2px;
 }
 
