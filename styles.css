@@ -261,7 +261,7 @@ a:hover {
     margin-top: 1rem;
     text-align: right;
     color: #888;
-    font-size: 0.2rem !important;
+    font-size: 0.8rem !important;
     font-style: normal;
 }
 
@@ -269,6 +269,14 @@ a:hover {
 .photo-credit,
 .photo-credit * {
     font-size: 0.8rem !important;
+}
+
+/* About page specific photo credit styling */
+.about-image .photo-credit {
+    text-align: left;
+    margin-left: 5.3rem;
+    padding-left: 0rem;
+    margin-top: 0.01rem;
 }
 
 /* Social Media Bar */
