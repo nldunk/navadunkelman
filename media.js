@@ -23,7 +23,7 @@ const mediaData = {
             ],
             date: "June 10, 2025",
             venue: "Roulette, Brooklyn, NY",
-            videoEmbed: "<iframe width="560" height="315" src="https://www.youtube.com/embed/XUF3ONAg8Wc?si=2s5P_K24BCeRRo4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>",
+            videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/XUF3ONAg8Wc?si=2s5P_K24BCeRRo4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video1" // Optional: direct video URL
         },
         {
