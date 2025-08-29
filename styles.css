@@ -415,11 +415,11 @@ a:hover {
     padding: 0 2rem;
 }
 
-.shows-layout {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 3rem;
-    align-items: start;
+.shows-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3rem;
 }
 
 .shows-label {
@@ -427,13 +427,6 @@ a:hover {
     color: #333;
     font-family: 'Forum', serif;
     font-weight: 400;
-    padding-top: 0.5rem;
-}
-
-.shows-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .shows-year {
@@ -442,21 +435,16 @@ a:hover {
     font-family: 'Forum', serif;
     font-weight: 400;
     text-decoration: underline;
-    margin-bottom: 2rem;
-    text-align: center;
 }
 
 .shows-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 100%;
-    max-width: 600px;
 }
 
 .show-entry {
     margin-bottom: 1.5rem;
-    text-align: center;
 }
 
 .show-date-time {
@@ -639,7 +627,7 @@ a:hover {
 
 /* Media Section */
 .media-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: #fff;
 }
 
@@ -653,77 +641,98 @@ a:hover {
     text-align: center;
     margin-bottom: 3rem;
     color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family: 'Forum', serif;
 }
 
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.media-videos {
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    margin-bottom: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.media-category {
+.media-video-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+}
+
+.media-video-item:last-child {
+    border-bottom: none;
+}
+
+.media-video-title {
+    font-size: 1.1rem;
+    color: #8B0000;
+    margin-bottom: 0.5rem;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+}
+
+.media-video-description {
+    font-size: 0.9375rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+}
+
+.media-video-details {
+    font-size: 0.9375rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.media-video-performers {
+    font-size: 0.9375rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.media-video-date {
+    font-size: 0.9375rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Forum', serif;
+    font-weight: 400;
+}
+
+.media-video-embed {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.media-video-embed iframe {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.media-video-placeholder {
     background: #f8f8f8;
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-}
-
-.media-category h2 {
-    font-size: 1.5rem;
-    color: #8B0000;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.media-item {
-    color: #555;
-    line-height: 1.6;
-}
-
-.media-item p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.media-item a {
-    color: #8B0000;
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.media-item a:hover {
-    color: #666;
-}
-
-.video-placeholder {
-    background: #e8e8e8;
-    padding: 3rem 2rem;
     text-align: center;
-    border-radius: 8px;
-    border: 2px dashed #ccc;
-}
-
-.video-placeholder p {
+    border: 1px solid #e0e0e0;
     color: #888;
     font-style: italic;
-    margin: 0;
+    font-size: 0.9375rem;
 }
 
-.media-update {
+.no-media {
+    color: #888;
+    font-style: italic;
+    font-size: 0.9375rem;
     text-align: center;
     padding: 2rem;
-    background: #f0f8ff;
-    border-radius: 12px;
-    border: 1px solid #d1e7ff;
-}
-
-.media-update p {
-    color: #555;
-    font-size: 1rem;
-    margin: 0;
 }
 
 /* Project Section */
@@ -897,42 +906,14 @@ a:hover {
         padding: 0 1rem;
     }
     
-    .shows-layout {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
+    .shows-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
     
-    .shows-label {
-        text-align: center;
-        padding-top: 0;
-    }
-    
-    .shows-main {
-        align-items: center;
-    }
-    
-    .shows-list {
-        max-width: 100%;
-    }
-    
-    .shows-layout {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .shows-label {
-        text-align: center;
-        padding-top: 0;
-    }
-    
-    .shows-main {
-        align-items: center;
-    }
-    
-    .shows-list {
-        max-width: 100%;
+    .shows-year {
+        align-self: flex-end;
     }
 }
 
@@ -967,12 +948,18 @@ a:hover {
         padding: 0 1rem;
     }
     
-    .media-category {
-        padding: 1rem;
+    .media-videos {
+        max-width: 100%;
+        gap: 2rem;
     }
     
-    .video-placeholder {
-        padding: 2rem 1rem;
+    .media-video-item {
+        padding-bottom: 1.5rem;
+    }
+    
+    .media-video-embed iframe {
+        width: 100%;
+        height: 200px;
     }
 }
 

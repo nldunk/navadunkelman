@@ -27,7 +27,10 @@ A clean, modern portfolio website for percussionist and improviser Nava Dunkelma
 ├── index.html          # Home page
 ├── about.html          # About page
 ├── shows.html          # Shows page
+├── media.html          # Media/videos page
 ├── contact.html        # Contact page
+├── shows.js            # Shows data (editable)
+├── media.js            # Media/videos data (editable)
 ├── styles.css          # Main stylesheet
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
@@ -63,6 +66,24 @@ To run locally:
    # Using PHP
    php -S localhost:8000
    ```
+
+## Dynamic Content Management
+
+### Shows
+The shows page loads dynamically from `shows.js`. To update shows:
+1. Edit `shows.js` in GitHub's web editor
+2. Add/remove/modify show entries
+3. Each show has: date, time, title, location, and optional moreInfo link
+4. Changes appear automatically on the website
+
+### Media
+The media page loads dynamically from `media.js`. To update videos:
+1. Edit `media.js` in GitHub's web editor
+2. Add/remove/modify video entries
+3. Each video has: title, description, details, performers, date, venue, and videoEmbed
+4. For YouTube: Use embed code from Share > Embed button
+5. For Vimeo: Use embed code from Share > Embed button
+6. Changes appear automatically on the website
 
 ## Customization
 
