@@ -1,16 +1,103 @@
-<div class="social-bar">
-    <ul class="social-list">
-        <li>
-            <a href="https://www.instagram.com/nldunk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="images/gray_instagram_icon.png" 
-                     alt="Instagram Icon" class="social-icon">
-            </a>
-        </li>
-        <li>
-            <a href="https://navadunkelman.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
-                <img src="images/bandcamp-button-bc-circle-grey/bandcamp-button-bc-circle-grey-64.png" 
-                     alt="Bandcamp Icon" class="social-icon">
-            </a>
-        </li>
-    </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nava Dunkelman</title>
+    <meta name="description" content="Current projects and collaborations featuring Nava Dunkelman">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Forum&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap"></noscript>
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Critical styles for above-the-fold content */
+        body { font-family: 'Forum', serif; margin: 0; padding: 0; }
+        .header { background: transparent; padding: 2rem 0 1rem 0; }
+        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
+        .nav-list { display: flex; list-style: none; gap: 0; }
+    </style>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>NAVA DUNKELMAN</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">home</a></li>
+                    <li><a href="about.html" class="nav-link">about</a></li>
+                    <li><a href="shows.html" class="nav-link">shows</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html" class="nav-link active">projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ima.html">IMA</a></li>
+                            <li><a href="nomon.html">NOMON</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="releases.html" class="nav-link">releases</a></li>
+                    <li><a href="media.html" class="nav-link">media</a></li>
+                    <li><a href="contact.html" class="nav-link">contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="projects-section">
+            <div class="projects-content">
+                <h1>Projects</h1>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h2><a href="ima.html">IMA</a></h2>
+                        <p>Electro-percussion experimental noise duo with Amma Ateria.</p>
+                        <p><a href="https://www.imanoise.me/" target="_blank" rel="noopener noreferrer">Visit IMA website</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h2><a href="nomon.html">NOMON</a></h2>
+                        <p>Percussion duo with Shayna Dunkelman.</p>
+                        <p><a href="https://nomonmusic.bandcamp.com/album/card-ii" target="_blank" rel="noopener noreferrer">Listen on Bandcamp</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Social Media Bar -->
+    <div class="social-bar">
+        <ul class="social-list">
+            <li>
+                <a href="https://www.instagram.com/nldunk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="images/gray_instagram_icon.png" 
+                         alt="Instagram Icon" class="social-icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://navadunkelman.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
+                    <img src="images/bandcamp-button-bc-circle-grey/bandcamp-button-bc-circle-grey-64.png" 
+                         alt="Bandcamp Icon" class="social-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
