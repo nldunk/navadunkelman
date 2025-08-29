@@ -9,10 +9,22 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Forum&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap"></noscript>
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Critical styles for above-the-fold content */
+        body { font-family: 'Forum', serif; margin: 0; padding: 0; }
+        .header { background: transparent; padding: 2rem 0 1rem 0; }
+        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
+        .nav-list { display: flex; list-style: none; gap: 0; }
+        .shows-section { padding: 2rem 0; }
+        .shows-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    </style>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css?v=1.7">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -98,7 +110,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="shows.js"></script>
-    <script src="script.js"></script>
+    <script src="shows.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

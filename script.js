@@ -211,6 +211,7 @@ if (document.readyState === 'loading') {
 // Contact Form Handling
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -225,23 +226,44 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Simple validation
             if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
+                showMessage('Please fill in all fields', 'error');
                 return;
             }
             
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
+                showMessage('Please enter a valid email address', 'error');
                 return;
             }
             
-            // Show success message (in a real implementation, you'd send this to a server)
-            alert('Thank you for your message! I\'ll get back to you soon.');
+            // Show loading state
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
             
-            // Reset form
-            this.reset();
+            // Simulate sending (for demo purposes)
+            setTimeout(() => {
+                showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+                this.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 1000);
         });
+    }
+    
+    function showMessage(message, type) {
+        if (formMessage) {
+            formMessage.textContent = message;
+            formMessage.className = `form-message ${type}`;
+            formMessage.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
     }
     
     // Load and render shows if we're on the shows page

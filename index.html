@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nava Dunkelman</title>
     <meta name="description" content="Biography, works, show info, videos, and contact info for percussionist and improviser Nava Dunkelman">
-    <link rel="canonical" href="https://www.navadunkelman.com">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Nava Dunkelman">
     <meta property="og:description" content="Biography, works, show info, videos, and contact info for percussionist and improviser Nava Dunkelman">
-    <meta property="og:image" content="https://static.wixstatic.com/media/c48e10_843dd65073964673a55a8398f1563e00~mv2.jpg/v1/fill/w_2500,h_1667,al_c/c48e10_843dd65073964673a55a8398f1563e00~mv2.jpg">
+    <meta property="og:image" content="images/Nava_top.jpg">
     <meta property="og:image:width" content="2500">
     <meta property="og:image:height" content="1667">
     <meta property="og:url" content="https://www.navadunkelman.com">
@@ -20,25 +19,32 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:title" content="Nava Dunkelman">
     <meta name="twitter:description" content="Biography, works, show info, videos, and contact info for percussionist and improviser Nava Dunkelman">
-    <meta name="twitter:image" content="https://static.wixstatic.com/media/c48e10_843dd65073964673a55a8398f1563e00~mv2.jpg/v1/fill/w_2500,h_1667,al_c/c48e10_843dd65073964673a55a8398f1563e00~mv2.jpg">
+    <meta name="twitter:image" content="images/Nava_top.jpg">
     <meta name="twitter:card" content="summary">
     
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="Nava Dunkelman, nava dunkelman, percussionist, musician, improviser IMA, NOMON">
     <meta name="google-site-verification" content="2Io_HTvmj6u1PvO54I-ByUEC32LboxWkmvBnP4jop5k">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://static.parastorage.com/client/pfavico.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="https://static.parastorage.com/client/pfavico.ico">
-    <link rel="apple-touch-icon" href="https://static.parastorage.com/client/pfavico.ico">
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Forum&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap"></noscript>
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Critical styles for above-the-fold content */
+        body { font-family: 'Forum', serif; margin: 0; padding: 0; }
+        .header { background: transparent; padding: 2rem 0 1rem 0; }
+        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
+        .nav-list { display: flex; list-style: none; gap: 0; }
+        .hero-section { padding: 0; }
+        .hero-img { width: 100%; height: auto; }
+    </style>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css?v=1.7">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -115,6 +121,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
