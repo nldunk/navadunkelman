@@ -1,5 +1,63 @@
-// Mobile Menu Toggle
+// Smooth Page Transition System - Only for main content
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Handle navigation clicks
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a');
+        if (link && isInternalLink(link.href)) {
+            e.preventDefault();
+            smoothTransition(link.href);
+        }
+    });
+    
+    function isInternalLink(href) {
+        return href.startsWith(window.location.origin) || 
+               href.startsWith('/') || 
+               href.startsWith('./') || 
+               href.startsWith('../');
+    }
+    
+    function smoothTransition(url) {
+        // Find the main content area (the section below the header)
+        const mainContent = document.querySelector('.main-content');
+        
+        if (mainContent) {
+            // Add smooth fade out effect
+            mainContent.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
+            mainContent.style.opacity = '0';
+            mainContent.style.transform = 'translateY(-20px)';
+            
+            // Wait for fade out, then navigate
+            setTimeout(() => {
+                window.location.href = url;
+            }, 600);
+        } else {
+            // Fallback: navigate immediately
+            window.location.href = url;
+        }
+    }
+    
+    // Fade in current page content
+    const mainContent = document.querySelector('.main-content');
+    if (mainContent) {
+        mainContent.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
+        mainContent.style.opacity = '0';
+        mainContent.style.transform = 'translateY(20px)';
+        
+        // Trigger reflow
+        mainContent.offsetHeight;
+        
+        // Fade in
+        mainContent.style.opacity = '1';
+        mainContent.style.transform = 'translateY(0)';
+        
+        // Clean up after animation
+        setTimeout(() => {
+            mainContent.style.transition = '';
+        }, 600);
+    }
+    
+    // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
     
