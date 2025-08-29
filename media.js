@@ -27,6 +27,13 @@ const mediaData = {
             videoUrl: "https://example.com/video1" // Optional: direct video URL
         },
         {
+            title: "IMA – The Flowers Die in Burning Fire – 炎の中で死にゆく花",
+            description: "Performance @ Other Minds Festival 28, Brava Theater, San Francisco, CA",
+            date: "September 28, 2024",
+            videoEmbed: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1040938563?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Other Minds 28: IMA - The Flowers Die in Burning Fire – 炎の中で死にゆく花"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+            videoUrl: "https://vimeo.com/1040938563?fl=pl&fe=sh"  // Paste your Vimeo URL here
+        },
+        {
             title: "Nava Dunkelman with ÉMU, NOMON, IMA",
             description: "Performance @ Roulette, Brooklyn, NY",
             details: "2024 Roulette Commission",
@@ -81,14 +88,7 @@ const mediaData = {
             videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N9ja6jPaGmE?si=-vvNhnZ9d9ogPZOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             videoUrl: "https://example.com/video7"
         },
-        {
-            title: "IMA",
-            description: "Performance @ The Center for New Music, San Francisco, CA",
-            details: "Other Minds: Latitudes",
-            date: "July 20, 2019",
-            videoEmbed: "<!-- Add your YouTube or Vimeo embed code here -->",
-            videoUrl: "https://example.com/video8"
-        }
+
     ]
 };
 

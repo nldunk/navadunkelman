@@ -348,10 +348,7 @@ function createVideoHTML(video) {
         <div class="media-video-item">
             <div class="media-video-left">
                 <!-- Video embed or placeholder -->
-                ${video.videoEmbed && video.videoEmbed !== '<!-- Add your YouTube or Vimeo embed code here -->' 
-                    ? `<div class="media-video-embed">${video.videoEmbed}</div>`
-                    : `<div class="media-video-placeholder">Video embed code needed - add YouTube or Vimeo embed in media.js</div>`
-                }
+                ${getVideoEmbed(video)}
             </div>
             <div class="media-video-right">
                 <div class="media-video-title">${video.title}</div>
@@ -372,4 +369,39 @@ function createVideoHTML(video) {
     html += `</div></div>`;
     
     return html;
+}
+
+// Function to generate video embed code from URL
+function getVideoEmbed(video) {
+    // If custom embed code is provided, use it
+    if (video.videoEmbed && video.videoEmbed !== '<!-- Add your YouTube or Vimeo embed code here -->') {
+        return `<div class="media-video-embed">${video.videoEmbed}</div>`;
+    }
+    
+    // If video URL is provided, generate embed code
+    if (video.videoUrl) {
+        if (video.videoUrl.includes('youtube.com') || video.videoUrl.includes('youtu.be')) {
+            // Extract YouTube video ID
+            let videoId = '';
+            if (video.videoUrl.includes('youtube.com/watch?v=')) {
+                videoId = video.videoUrl.split('v=')[1].split('&')[0];
+            } else if (video.videoUrl.includes('youtu.be/')) {
+                videoId = video.videoUrl.split('youtu.be/')[1].split('?')[0];
+            }
+            
+            if (videoId) {
+                return `<div class="media-video-embed"><iframe width="100%" height="225" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+            }
+        } else if (video.videoUrl.includes('vimeo.com')) {
+            // Extract Vimeo video ID (handle URLs with query parameters)
+            const videoId = video.videoUrl.split('vimeo.com/')[1].split(/[?#]/)[0];
+            
+            if (videoId) {
+                return `<div class="media-video-embed"><iframe src="https://player.vimeo.com/video/${videoId}" width="100%" height="225" frameborder="0" allowfullscreen></iframe></div>`;
+            }
+        }
+    }
+    
+    // Fallback placeholder
+    return `<div class="media-video-placeholder">Video URL needed - add YouTube or Vimeo URL in videoUrl field</div>`;
 }
