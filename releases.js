@@ -17,7 +17,7 @@ const releasesData = {
             description: "Relative Pitch Records, 2023",
             details: "Incinerating sound together since 2014, Nava Dunkelman and gabby fluke-mogul combine their expansive palettes with finesse, creating a fierce dialect of their own. Violin and percussion combust viscerally through spirit and song. Forged in flame, Dunkelman and fluke-mogul honor ritual and celebrate their rich sonic hues in their duo release, Likht.",
             date: "Released April 14, 2023",
-            image: "images/nava_gabby_likht.jpg",
+            image: "images/nava_gabby_Likht.jpg",
             listenBuyUrl: "https://navadunkelman.bandcamp.com/album/likht" // Replace with actual URL
         },
         {
