@@ -4,22 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Releases - Nava Dunkelman</title>
-    <meta name="description" content="Recordings and releases featuring Nava Dunkelman">
+    <meta name="description" content="Releases by Nava Dunkelman, percussionist and improviser">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Forum&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap"></noscript>
-    
-    <!-- Critical CSS -->
-    <style>
-        /* Critical styles for above-the-fold content */
-        body { font-family: 'Forum', serif; margin: 0; padding: 0; }
-        .header { background: transparent; padding: 2rem 0 1rem 0; }
-        .logo h1 { font-size: 3rem; color: #8B0000; margin: 0; }
-        .nav-list { display: flex; list-style: none; gap: 0; }
-    </style>
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -59,12 +50,13 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content page-content">
+    <main class="main-content">
         <section class="releases-section">
             <div class="releases-content">
-                <h1>Releases</h1>
-                <p>Recordings and releases featuring Nava Dunkelman will be posted here.</p>
-                <p>Check back soon for updates!</p>
+                <div id="releases-list" class="releases-list">
+                    <!-- Releases will be loaded dynamically -->
+                    <p>Loading releases...</p>
+                </div>
             </div>
         </section>
     </main>
@@ -87,7 +79,15 @@
         </ul>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer content can be added here -->
+        </div>
+    </footer>
+
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="releases.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

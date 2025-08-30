@@ -57,6 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 600);
     }
     
+    // Load page-specific content
+    console.log('Loading page-specific content...');
+    loadShows();
+    loadMedia();
+    loadReleases();
+    
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
@@ -462,4 +468,74 @@ function getVideoEmbed(video) {
     
     // Fallback placeholder
     return `<div class="media-video-placeholder">Video URL needed - add YouTube or Vimeo URL in videoUrl field</div>`;
+}
+
+// Function to create HTML for a single release
+function createReleaseHTML(release) {
+    let html = `
+        <div class="release-item">
+            <div class="release-left">
+                <div class="release-image">
+                    <img src="${release.image}" alt="${release.title}" class="release-img">
+                </div>
+            </div>
+            <div class="release-right">
+                <div class="release-title">${release.title}</div>
+                <div class="release-description">${release.description}</div>`;
+    
+    if (release.details) {
+        // Convert \n to <br> for line breaks
+        const detailsWithBreaks = release.details.replace(/\n/g, '<br>');
+        html += `<div class="release-details">${detailsWithBreaks}</div>`;
+    }
+    
+    if (release.date) {
+        html += `<div class="release-date">${release.date}</div>`;
+    }
+    
+    // Add Listen + Buy now button if URL exists
+    if (release.listenBuyUrl) {
+        html += `<div class="release-actions">
+            <a href="${release.listenBuyUrl}" target="_blank" rel="noopener noreferrer" class="listen-buy-btn">Listen + Buy now</a>
+        </div>`;
+    } else {
+        html += `<div class="release-actions">
+            <span class="sold-out">SOLD OUT</span>
+        </div>`;
+    }
+    
+    html += `</div></div>`;
+    
+    return html;
+}
+
+// Function to load and render releases
+function loadReleases() {
+    console.log('loadReleases function called');
+    const releasesContainer = document.getElementById('releases-list');
+    
+    if (!releasesContainer) {
+        console.log('Releases container not found - not on releases page');
+        return; // Not on releases page
+    }
+    
+    console.log('Releases container found, loading releases...');
+    
+    // Check if releasesData is available (loaded from releases.js)
+    if (typeof releasesData === 'undefined') {
+        console.error('Releases data not loaded. Make sure releases.js is included.');
+        releasesContainer.innerHTML = '<p class="no-releases">Error: Releases data not loaded</p>';
+        return;
+    }
+    
+    console.log('Releases data found:', releasesData);
+    
+    // Render releases
+    if (releasesData.releases && releasesData.releases.length > 0) {
+        console.log('Rendering', releasesData.releases.length, 'releases');
+        releasesContainer.innerHTML = releasesData.releases.map(release => createReleaseHTML(release)).join('');
+    } else {
+        console.log('No releases found in data');
+        releasesContainer.innerHTML = '<p class="no-releases">No releases available</p>';
+    }
 }
