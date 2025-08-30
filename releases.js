@@ -45,7 +45,7 @@ const releasesData = {
             listenBuyUrl: "https://nomonmusic.bandcamp.com/album/card-ii" // Replace with actual URL
         },
         {
-            title: "IMA - <i>The Flowers Die in Burning Fire - 炎の中で死にゆく花 LP</i>",
+            title: "IMA - <i>The Flowers Die in Burning Fire - 炎の中で死にゆく花</i>",
             description: "Buh Records, 2019",
             details: "The debut album of IMA tells an anecdote of the inevitable notion of time, change, decay, the vanished, and rebirth. With meticulous, industrial, and filmic instrumentation, IMA marches forth with starkness and surrender into the aftermath of destruction, and attempt for transformative regeneration of beauty through catalysts of pleasure.",
             date: "Released November 15, 2019",
