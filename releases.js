@@ -32,7 +32,7 @@ const releasesData = {
             title: "DunkelpeK (Nava Dunkelman & Jakob Pek) - <i>Fire's Hush</i>",
             description: "AKP Recordings, 2022",
             details: "Fire's Hush, is a journey into the heart of listening. It brings into sound the elusive dreams and subliminal echoes of our deeper mind while giving song to the oceanic mystery of the heart.",
-            date: "Released February 4, 2021",
+            date: "Released February 4, 2022",
             image: "images/dunkelpek_fire's hush.jpg",
             listenBuyUrl: "https://dunkelpek.bandcamp.com/album/fires-hush" // Replace with actual URL
         },
