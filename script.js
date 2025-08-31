@@ -340,6 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to load and render shows
 function loadShows() {
     const upcomingShowsContainer = document.getElementById('upcoming-shows');
+    const upcomingShows2026Container = document.getElementById('upcoming-shows-2026');
     
     if (!upcomingShowsContainer) {
         return; // Not on shows page
@@ -351,11 +352,18 @@ function loadShows() {
         return;
     }
     
-    // Render upcoming shows
+    // Render upcoming shows (2025)
     if (showsData.upcoming && showsData.upcoming.length > 0) {
         upcomingShowsContainer.innerHTML = showsData.upcoming.map(show => createShowHTML(show)).join('');
     } else {
         upcomingShowsContainer.innerHTML = '<p class="no-shows">No upcoming shows scheduled</p>';
+    }
+    
+    // Render upcoming shows (2026)
+    if (upcomingShows2026Container && showsData.upcoming2026 && showsData.upcoming2026.length > 0) {
+        upcomingShows2026Container.innerHTML = showsData.upcoming2026.map(show => createShowHTML(show)).join('');
+    } else if (upcomingShows2026Container) {
+        upcomingShows2026Container.innerHTML = '<p class="no-shows">No 2026 shows scheduled yet</p>';
     }
 }
 

@@ -5,12 +5,6 @@
 const showsData = {
     upcoming: [
         {
-            date: "August 30",
-            time: "8:00PM",
-            title: "Solo",
-            location: "Little Lightning Gallery, Brooklyn, NY"
-        },
-        {
             date: "September 12",
             time: "8:00PM",
             title: "Duo with Chuck Bettis",
@@ -49,16 +43,15 @@ const showsData = {
             location: "The Stone, New York, NY"
         }
     ],
-    past: [
-        // Add past shows here in the same format
-        // Example:
-        // {
-        //     date: "December 15",
-        //     time: "8:00PM",
-        //     title: "Past Show Example",
-        //     location: "Venue Name, City, State"
-        // }
-    ]
+    
+    upcoming2026: [
+        {
+            date: "March 26",
+            time: "8:30PM",
+            title: "Trio with Theresa Wong and Jane Rigler",
+            location: "The Stone, New York, NY"
+        },
+    ],
 };
 
 // Export for use in other files
