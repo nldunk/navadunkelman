@@ -65,30 +65,13 @@
         <!-- Contact Section -->
         <section class="contact-section">
             <div class="container">
-                <h2 class="section-title fade-in">Get In Touch</h2>
+                <h2 class="section-title fade-in">For Booking // General Inquires // Lessons</h2>
                 <div class="contact-content">
-                    <div class="contact-info fade-in">
-                        <h3>Contact Information</h3>
-                        <div class="contact-item">
-                            <h4>Email</h4>
-                            <p><a href="mailto:contact@navadunkelman.com">contact@navadunkelman.com</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>Location</h4>
-                            <p>Bay Area, California</p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>Social Media</h4>
-                            <div class="social-links">
-                                <a href="https://www.instagram.com/nldunk/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                                <a href="https://navadunkelman.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form fade-in">
-                        <h3>Send a Message</h3>
-                        <form id="contactForm">
+                    <div class="contact-form fade-in centered-form">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="e35701f4-e47b-424a-a550-9fe371d97968">
+                            <input type="hidden" name="redirect" value="https://navadunkelman.github.io/navadunkelman/contact.html?sent=true">
+                            
                             <div class="form-group">
                                 <input type="text" id="name" name="name" placeholder="Name *" required>
                             </div>
@@ -108,6 +91,12 @@
                             <button type="submit" class="submit-btn">Send</button>
                         </form>
                         <div id="formMessage" class="form-message"></div>
+                        
+                        <!-- Success message that appears after form submission -->
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <h4>Thank you!</h4>
+                            <p>Your message has been sent successfully. I'll get back to you soon!</p>
+                        </div>
                     </div>
                 </div>
             </div>

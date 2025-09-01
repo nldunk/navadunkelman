@@ -63,6 +63,30 @@ document.addEventListener('DOMContentLoaded', function() {
     loadMedia();
     loadReleases();
     
+    // Contact Form Functionality
+    // Check if we're on the contact page and if the form was just submitted
+    const urlParams = new URLSearchParams(window.location.search);
+    const formSent = urlParams.get('sent');
+    
+    if (formSent === 'true') {
+        // Show success message
+        const successMessage = document.getElementById('successMessage');
+        const contactForm = document.getElementById('contactForm');
+        
+        if (successMessage && contactForm) {
+            contactForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Scroll to the success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Clean up the URL (remove the ?sent=true parameter)
+            if (window.history && window.history.replaceState) {
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        }
+    }
+    
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
@@ -547,3 +571,5 @@ function loadReleases() {
         releasesContainer.innerHTML = '<p class="no-releases">No releases available</p>';
     }
 }
+
+
