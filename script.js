@@ -136,17 +136,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     left: 0 !important;
                     width: 100vw !important;
                     height: 100vh !important;
-                    background: white !important;
+                    background: rgba(255, 255, 255, 0.98) !important;
+                    backdrop-filter: blur(10px) !important;
                     z-index: 9999 !important;
                     display: flex !important;
                     flex-direction: column !important;
                     justify-content: center !important;
                     align-items: center !important;
-                    gap: 2rem !important;
+                    gap: 1rem !important;
                     padding: 2rem !important;
                     box-sizing: border-box !important;
-                    border: 5px solid red !important;
                     overflow-y: auto !important;
+                    -webkit-overflow-scrolling: touch !important;
                 `;
                 
                 // Add menu items (excluding projects - will add separately)
@@ -174,15 +175,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         const projectsLink = document.createElement('div');
                         projectsLink.textContent = 'projects';
                         projectsLink.style.cssText = `
-                            font-size: 1.5rem !important;
+                            font-size: 1.1rem !important;
                             color: #333 !important;
-                            padding: 1rem 2rem !important;
-                            background: yellow !important;
-                            border: 2px solid #333 !important;
+                            padding: 0.75rem 1.5rem !important;
+                            background: transparent !important;
+                            border: 1px solid #ddd !important;
                             text-align: center !important;
                             display: block !important;
-                            width: 200px !important;
+                            width: 160px !important;
                             cursor: pointer !important;
+                            border-radius: 4px !important;
+                            transition: all 0.3s ease !important;
                         `;
                         
                         const dropdown = document.createElement('div');
@@ -197,32 +200,36 @@ document.addEventListener('DOMContentLoaded', function() {
                         imaLink.href = 'ima.html';
                         imaLink.textContent = 'IMA';
                         imaLink.style.cssText = `
-                            font-size: 1.2rem !important;
-                            color: #333 !important;
+                            font-size: 1rem !important;
+                            color: #666 !important;
                             text-decoration: none !important;
                             padding: 0.5rem 1rem !important;
-                            background: lightblue !important;
-                            border: 1px solid #333 !important;
+                            background: transparent !important;
+                            border: 1px solid #eee !important;
                             text-align: center !important;
                             display: block !important;
-                            width: 150px !important;
+                            width: 140px !important;
                             cursor: pointer !important;
+                            border-radius: 4px !important;
+                            transition: all 0.3s ease !important;
                         `;
                         
                         const nomonLink = document.createElement('a');
                         nomonLink.href = 'nomon.html';
                         nomonLink.textContent = 'NOMON';
                         nomonLink.style.cssText = `
-                            font-size: 1.2rem !important;
-                            color: #333 !important;
+                            font-size: 1rem !important;
+                            color: #666 !important;
                             text-decoration: none !important;
                             padding: 0.5rem 1rem !important;
-                            background: lightblue !important;
-                            border: 1px solid #333 !important;
+                            background: transparent !important;
+                            border: 1px solid #eee !important;
                             text-align: center !important;
                             display: block !important;
-                            width: 150px !important;
+                            width: 140px !important;
                             cursor: pointer !important;
+                            border-radius: 4px !important;
+                            transition: all 0.3s ease !important;
                         `;
                         
                         dropdown.appendChild(imaLink);
@@ -251,16 +258,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         link.href = item.url;
                         link.textContent = item.name;
                         link.style.cssText = `
-                            font-size: 1.5rem !important;
+                            font-size: 1.1rem !important;
                             color: #333 !important;
                             text-decoration: none !important;
-                            padding: 1rem 2rem !important;
-                            background: yellow !important;
-                            border: 2px solid #333 !important;
+                            padding: 0.75rem 1.5rem !important;
+                            background: transparent !important;
+                            border: 1px solid #ddd !important;
                             text-align: center !important;
                             display: block !important;
-                            width: 200px !important;
+                            width: 160px !important;
                             cursor: pointer !important;
+                            border-radius: 4px !important;
+                            transition: all 0.3s ease !important;
                         `;
                         link.addEventListener('click', (e) => {
                             e.preventDefault();
