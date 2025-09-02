@@ -1277,6 +1277,21 @@ social-list {
         font-size: 0.8rem !important;
     }
     
+    .about-image .photo-credit {
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .ima-page .photo-credit {
+        margin-left: 0 !important;
+        text-align: left;
+    }
+    
+    .nomon-page .photo-credit {
+        margin-left: 0 !important;
+        text-align: left;
+    }
+    
     .social-list {
         gap: 1rem;
     }
