@@ -1320,15 +1320,13 @@ a:hover {
     .social-bar {
         position: fixed;
         bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 1rem;
         z-index: 100;
     }
     
     .social-list {
         gap: 1rem;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
     }
     
     .social-icon {
