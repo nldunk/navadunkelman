@@ -214,6 +214,29 @@ a:hover {
     display: flex !important;
 }
 
+/* Global mobile menu styles - works on all devices */
+.nav-list.active {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: white !important;
+    flex-direction: column !important;
+    padding: 4rem 2rem 2rem 2rem !important;
+    gap: 2rem !important;
+    transform: translateX(0) !important;
+    z-index: 9999 !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    overflow-y: auto !important;
+    display: flex !important;
+    border: 5px solid red !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
@@ -1097,7 +1120,7 @@ a:hover {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
-        width: 100% !important;
+        width: 100vw !important;
         height: 100vh !important;
         background: white !important;
         flex-direction: column !important;
@@ -1112,6 +1135,8 @@ a:hover {
         display: flex !important;
         border: 5px solid red !important;
         box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
     
     .nav-list.active {
