@@ -727,7 +727,7 @@ a:hover {
 
 .success-message {
     background: #d4edda;
-    color: #b5e3bf;
+    color: #04310e;
     border: 1px solid #c3e6cb;
     clear: both;
     width: 100%;
@@ -735,12 +735,12 @@ a:hover {
 
 .success-message h4 {
     margin: 0 0 0.5rem 0;
-    color: #b5e3bf;
+    color: #04310e;
 }
 
 .success-message p {
     margin: 0;
-    color: #b5e3bf;
+    color: #333;
 }
 
 .form-message.error {
