@@ -1292,6 +1292,23 @@ social-list {
         text-align: left !important;
     }
     
+    /* Move content up closer to hamburger menu */
+    .main-content {
+        padding-top: 1rem !important;
+    }
+    
+    .section-title {
+        margin-top: 0.5rem !important;
+    }
+    
+    .about-text {
+        margin-top: 0.5rem !important;
+    }
+    
+    .contact-section {
+        padding-top: 0.5rem !important;
+    }
+    
     .social-list {
         gap: 1rem;
     }
