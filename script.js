@@ -121,6 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Remove test element
                 const testEl = document.getElementById('menu-test');
                 if (testEl) testEl.remove();
+                // Remove mobile menu overlay
+                const mobileMenu = document.getElementById('mobile-menu-overlay');
+                if (mobileMenu) mobileMenu.remove();
             } else {
                 console.log('Opening menu');
                 navList.classList.add('active');
@@ -132,6 +135,54 @@ document.addEventListener('DOMContentLoaded', function() {
                 testEl.style.cssText = 'position: fixed; top: 50px; left: 50px; width: 200px; height: 100px; background: red; color: white; z-index: 10000; display: flex; align-items: center; justify-content: center; font-size: 20px;';
                 testEl.textContent = 'MENU IS OPEN!';
                 document.body.appendChild(testEl);
+                
+                // Create a completely new mobile menu overlay
+                const mobileMenu = document.createElement('div');
+                mobileMenu.id = 'mobile-menu-overlay';
+                mobileMenu.style.cssText = `
+                    position: fixed !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    width: 100vw !important;
+                    height: 100vh !important;
+                    background: white !important;
+                    z-index: 9999 !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    gap: 2rem !important;
+                    padding: 2rem !important;
+                    box-sizing: border-box !important;
+                    border: 5px solid red !important;
+                `;
+                
+                // Add menu items
+                const menuItems = ['home', 'about', 'shows', 'projects', 'releases', 'media', 'contact'];
+                menuItems.forEach(item => {
+                    const link = document.createElement('a');
+                    link.href = item === 'home' ? 'index.html' : `${item}.html`;
+                    link.textContent = item;
+                    link.style.cssText = `
+                        font-size: 1.5rem !important;
+                        color: #333 !important;
+                        text-decoration: none !important;
+                        padding: 1rem 2rem !important;
+                        background: yellow !important;
+                        border: 2px solid #333 !important;
+                        text-align: center !important;
+                        display: block !important;
+                        width: 200px !important;
+                    `;
+                    link.addEventListener('click', () => {
+                        mobileMenu.remove();
+                        testEl.remove();
+                        document.body.style.overflow = '';
+                    });
+                    mobileMenu.appendChild(link);
+                });
+                
+                document.body.appendChild(mobileMenu);
             }
             
             // Animate hamburger menu
