@@ -1278,18 +1278,18 @@ social-list {
     }
     
     .about-image .photo-credit {
-        margin-left: 0;
-        text-align: left;
+        margin-left: 0 !important;
+        text-align: left !important;
     }
     
     .ima-page .photo-credit {
         margin-left: 0 !important;
-        text-align: left;
+        text-align: left !important;
     }
     
     .nomon-page .photo-credit {
         margin-left: 0 !important;
-        text-align: left;
+        text-align: left !important;
     }
     
     .social-list {
