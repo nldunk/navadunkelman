@@ -117,10 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isActive) {
                 console.log('Closing menu');
                 navList.classList.remove('active');
-                document.body.style.overflow = '';
-                // Remove test element
-                const testEl = document.getElementById('menu-test');
-                if (testEl) testEl.remove();
                 // Remove mobile menu overlay
                 const mobileMenu = document.getElementById('mobile-menu-overlay');
                 if (mobileMenu) mobileMenu.remove();
@@ -129,12 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 navList.classList.add('active');
                 // Don't lock body scroll - let the menu be scrollable
                 
-                // Add a simple test element to see if anything is working
-                const testEl = document.createElement('div');
-                testEl.id = 'menu-test';
-                testEl.style.cssText = 'position: fixed; top: 50px; left: 50px; width: 200px; height: 100px; background: red; color: white; z-index: 10000; display: flex; align-items: center; justify-content: center; font-size: 20px;';
-                testEl.textContent = 'MENU IS OPEN!';
-                document.body.appendChild(testEl);
+                // Remove test element - no longer needed
                 
                 // Create a completely new mobile menu overlay
                 const mobileMenu = document.createElement('div');
@@ -158,119 +149,129 @@ document.addEventListener('DOMContentLoaded', function() {
                     overflow-y: auto !important;
                 `;
                 
-                // Add menu items
+                // Add menu items (excluding projects - will add separately)
                 const menuItems = [
                     { name: 'home', url: 'index.html' },
                     { name: 'about', url: 'about.html' },
                     { name: 'shows', url: 'shows.html' },
+                    { name: 'projects', url: 'projects.html', isDropdown: true },
                     { name: 'releases', url: 'releases.html' },
                     { name: 'media', url: 'media.html' },
                     { name: 'contact', url: 'contact.html' }
                 ];
                 
                 menuItems.forEach(item => {
-                    const link = document.createElement('a');
-                    link.href = item.url;
-                    link.textContent = item.name;
-                    link.style.cssText = `
-                        font-size: 1.5rem !important;
-                        color: #333 !important;
-                        text-decoration: none !important;
-                        padding: 1rem 2rem !important;
-                        background: yellow !important;
-                        border: 2px solid #333 !important;
-                        text-align: center !important;
-                        display: block !important;
-                        width: 200px !important;
-                        cursor: pointer !important;
-                    `;
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        mobileMenu.remove();
-                        testEl.remove();
-                        // Navigate to the page
-                        window.location.href = item.url;
-                    });
-                    mobileMenu.appendChild(link);
+                    if (item.isDropdown) {
+                        // Handle projects dropdown
+                        const projectsContainer = document.createElement('div');
+                        projectsContainer.style.cssText = `
+                            display: flex !important;
+                            flex-direction: column !important;
+                            align-items: center !important;
+                            gap: 0.5rem !important;
+                        `;
+                        
+                        const projectsLink = document.createElement('div');
+                        projectsLink.textContent = 'projects';
+                        projectsLink.style.cssText = `
+                            font-size: 1.5rem !important;
+                            color: #333 !important;
+                            padding: 1rem 2rem !important;
+                            background: yellow !important;
+                            border: 2px solid #333 !important;
+                            text-align: center !important;
+                            display: block !important;
+                            width: 200px !important;
+                            cursor: pointer !important;
+                        `;
+                        
+                        const dropdown = document.createElement('div');
+                        dropdown.id = 'projects-dropdown';
+                        dropdown.style.cssText = `
+                            display: none !important;
+                            flex-direction: column !important;
+                            gap: 0.5rem !important;
+                        `;
+                        
+                        const imaLink = document.createElement('a');
+                        imaLink.href = 'ima.html';
+                        imaLink.textContent = 'IMA';
+                        imaLink.style.cssText = `
+                            font-size: 1.2rem !important;
+                            color: #333 !important;
+                            text-decoration: none !important;
+                            padding: 0.5rem 1rem !important;
+                            background: lightblue !important;
+                            border: 1px solid #333 !important;
+                            text-align: center !important;
+                            display: block !important;
+                            width: 150px !important;
+                            cursor: pointer !important;
+                        `;
+                        
+                        const nomonLink = document.createElement('a');
+                        nomonLink.href = 'nomon.html';
+                        nomonLink.textContent = 'NOMON';
+                        nomonLink.style.cssText = `
+                            font-size: 1.2rem !important;
+                            color: #333 !important;
+                            text-decoration: none !important;
+                            padding: 0.5rem 1rem !important;
+                            background: lightblue !important;
+                            border: 1px solid #333 !important;
+                            text-align: center !important;
+                            display: block !important;
+                            width: 150px !important;
+                            cursor: pointer !important;
+                        `;
+                        
+                        dropdown.appendChild(imaLink);
+                        dropdown.appendChild(nomonLink);
+                        projectsContainer.appendChild(projectsLink);
+                        projectsContainer.appendChild(dropdown);
+                        mobileMenu.appendChild(projectsContainer);
+                        
+                        // Toggle dropdown on click
+                        projectsLink.addEventListener('click', () => {
+                            const isVisible = dropdown.style.display === 'flex';
+                            dropdown.style.display = isVisible ? 'none' : 'flex';
+                        });
+                        
+                        // Add click handlers for dropdown items
+                        [imaLink, nomonLink].forEach(link => {
+                            link.addEventListener('click', (e) => {
+                                e.preventDefault();
+                                mobileMenu.remove();
+                                window.location.href = link.href;
+                            });
+                        });
+                    } else {
+                        // Regular menu item
+                        const link = document.createElement('a');
+                        link.href = item.url;
+                        link.textContent = item.name;
+                        link.style.cssText = `
+                            font-size: 1.5rem !important;
+                            color: #333 !important;
+                            text-decoration: none !important;
+                            padding: 1rem 2rem !important;
+                            background: yellow !important;
+                            border: 2px solid #333 !important;
+                            text-align: center !important;
+                            display: block !important;
+                            width: 200px !important;
+                            cursor: pointer !important;
+                        `;
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            mobileMenu.remove();
+                            // Navigate to the page
+                            window.location.href = item.url;
+                        });
+                        mobileMenu.appendChild(link);
+                    }
                 });
-                
-                // Add projects with dropdown
-                const projectsContainer = document.createElement('div');
-                projectsContainer.style.cssText = `
-                    display: flex !important;
-                    flex-direction: column !important;
-                    align-items: center !important;
-                    gap: 1rem !important;
-                `;
-                
-                const projectsLink = document.createElement('div');
-                projectsLink.textContent = 'projects';
-                projectsLink.style.cssText = `
-                    font-size: 1.5rem !important;
-                    color: #333 !important;
-                    padding: 1rem 2rem !important;
-                    background: yellow !important;
-                    border: 2px solid #333 !important;
-                    text-align: center !important;
-                    display: block !important;
-                    width: 200px !important;
-                    cursor: pointer !important;
-                `;
-                
-                const dropdown = document.createElement('div');
-                dropdown.style.cssText = `
-                    display: flex !important;
-                    flex-direction: column !important;
-                    gap: 0.5rem !important;
-                `;
-                
-                const imaLink = document.createElement('a');
-                imaLink.href = 'ima.html';
-                imaLink.textContent = 'IMA';
-                imaLink.style.cssText = `
-                    font-size: 1.2rem !important;
-                    color: #333 !important;
-                    text-decoration: none !important;
-                    padding: 0.5rem 1rem !important;
-                    background: lightblue !important;
-                    border: 1px solid #333 !important;
-                    text-align: center !important;
-                    display: block !important;
-                    width: 150px !important;
-                    cursor: pointer !important;
-                `;
-                
-                const nomonLink = document.createElement('a');
-                nomonLink.href = 'nomon.html';
-                nomonLink.textContent = 'NOMON';
-                nomonLink.style.cssText = `
-                    font-size: 1.2rem !important;
-                    color: #333 !important;
-                    text-decoration: none !important;
-                    padding: 0.5rem 1rem !important;
-                    background: lightblue !important;
-                    border: 1px solid #333 !important;
-                    text-align: center !important;
-                    display: block !important;
-                    width: 150px !important;
-                    cursor: pointer !important;
-                `;
-                
-                dropdown.appendChild(imaLink);
-                dropdown.appendChild(nomonLink);
-                projectsContainer.appendChild(projectsLink);
-                projectsContainer.appendChild(dropdown);
-                mobileMenu.appendChild(projectsContainer);
-                
-                // Add click handlers for dropdown items
-                [imaLink, nomonLink].forEach(link => {
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        mobileMenu.remove();
-                        testEl.remove();
-                        window.location.href = link.href;
-                    });
-                });
+
                 
                 document.body.appendChild(mobileMenu);
             }
