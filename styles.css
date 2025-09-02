@@ -1319,15 +1319,16 @@ a:hover {
     
     .social-bar {
         position: fixed;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 100;
     }
     
     .social-list {
         gap: 1rem;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
     
     .social-icon {
