@@ -736,11 +736,13 @@ a:hover {
 .success-message h4 {
     margin: 0 0 0.5rem 0;
     color: #04310e;
+    font-size: 1.1rem;
 }
 
 .success-message p {
     margin: 0;
-    color: #333;
+    color: #04310e;
+    font-size: 1.1rem;
 }
 
 .form-message.error {
