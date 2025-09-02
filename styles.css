@@ -1092,32 +1092,24 @@ a:hover {
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 1);
-        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100vh;
+        background: white;
         flex-direction: column;
-        padding: 2rem;
-        gap: 1rem;
-        border: none;
-        border-radius: none;
+        padding: 4rem 2rem 2rem 2rem;
+        gap: 2rem;
         transform: translateX(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
         z-index: 1000;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         overflow-y: auto;
         display: flex;
+        border: 3px solid red;
     }
     
     .nav-list.active {
-        transform: translateX(0) !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        display: flex !important;
+        transform: translateX(0);
     }
     
     .dropdown-menu {
@@ -1138,13 +1130,14 @@ a:hover {
     }
     
     .nav-link {
-        font-size: 1.2rem;
-        padding: 1rem 0;
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
         text-align: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid #eee;
         width: 100%;
         display: block;
         color: #333;
+        font-weight: 500;
     }
     
     .nav-link:last-child {
@@ -1163,7 +1156,7 @@ a:hover {
         max-width: 100%;
     }
     
--list {
+social-list {
         gap: 1.5rem;
     }
     

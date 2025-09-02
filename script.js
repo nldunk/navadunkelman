@@ -111,29 +111,29 @@ document.addEventListener('DOMContentLoaded', function() {
         // Function to toggle menu
         function toggleMobileMenu() {
             console.log('Toggle mobile menu called');
-            console.log('Current navList classes:', navList.className);
             
-            navList.classList.toggle('active');
+            const isActive = navList.classList.contains('active');
             
-            console.log('After toggle, navList classes:', navList.className);
-            console.log('Menu is active:', navList.classList.contains('active'));
+            if (isActive) {
+                console.log('Closing menu');
+                navList.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                console.log('Opening menu');
+                navList.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
             
             // Animate hamburger menu
             const spans = mobileMenuToggle.querySelectorAll('span');
             if (navList.classList.contains('active')) {
-                console.log('Opening menu');
                 spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
                 spans[1].style.opacity = '0';
                 spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                // Prevent body scroll when menu is open
-                document.body.style.overflow = 'hidden';
             } else {
-                console.log('Closing menu');
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
-                // Restore body scroll
-                document.body.style.overflow = '';
             }
         }
         
