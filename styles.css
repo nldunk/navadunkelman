@@ -1294,19 +1294,33 @@ social-list {
     
     /* Move content up closer to hamburger menu */
     .main-content {
-        padding-top: 1rem !important;
+        padding-top: 0.5rem !important;
+        background-color: yellow !important; /* Debugging */
+    }
+    
+    .hero-section {
+        padding-top: 0.5rem !important;
+        background-color: orange !important; /* Debugging */
+    }
+    
+    .about-section {
+        padding-top: 0.5rem !important;
+        background-color: lightblue !important; /* Debugging */
     }
     
     .section-title {
         margin-top: 0.5rem !important;
+        background-color: pink !important; /* Debugging */
     }
     
     .about-text {
         margin-top: 0.5rem !important;
+        background-color: lightgreen !important; /* Debugging */
     }
     
     .contact-section {
         padding-top: 0.5rem !important;
+        background-color: lightcoral !important; /* Debugging */
     }
     
     .social-list {
