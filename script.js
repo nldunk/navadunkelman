@@ -103,20 +103,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
     
+    console.log('Mobile menu toggle found:', mobileMenuToggle);
+    console.log('Nav list found:', navList);
+    
     if (mobileMenuToggle && navList) {
+        console.log('Mobile menu elements found, setting up event listeners');
         // Function to toggle menu
         function toggleMobileMenu() {
+            console.log('Toggle mobile menu called');
+            console.log('Current navList classes:', navList.className);
+            
             navList.classList.toggle('active');
+            
+            console.log('After toggle, navList classes:', navList.className);
+            console.log('Menu is active:', navList.classList.contains('active'));
             
             // Animate hamburger menu
             const spans = mobileMenuToggle.querySelectorAll('span');
             if (navList.classList.contains('active')) {
+                console.log('Opening menu');
                 spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
                 spans[1].style.opacity = '0';
                 spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
                 // Prevent body scroll when menu is open
                 document.body.style.overflow = 'hidden';
             } else {
+                console.log('Closing menu');
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
@@ -129,12 +141,14 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
+            console.log('Mobile menu clicked');
             toggleMobileMenu();
         });
         
         mobileMenuToggle.addEventListener('touchstart', function(e) {
             e.preventDefault();
             e.stopPropagation();
+            console.log('Mobile menu touched');
             toggleMobileMenu();
         });
         
