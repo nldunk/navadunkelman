@@ -1161,7 +1161,7 @@ a:hover {
         max-width: 100%;
     }
     
-social-list {
+    .social-list {
         gap: 1.5rem;
     }
     
@@ -1317,8 +1317,17 @@ social-list {
         padding-top: 0.5rem !important;
     }
     
+    .social-bar {
+        position: fixed;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    
     .social-list {
         gap: 1rem;
+        flex-direction: column;
     }
     
     .social-icon {
