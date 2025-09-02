@@ -21,8 +21,8 @@ const releasesData = {
             listenBuyUrl: "https://navadunkelman.bandcamp.com/album/likht" // Replace with actual URL
         },
         {
-            title: "<i>Explorations 71</i> (feat. Nava Dunkelman, percussion)",
-            description: "by Payton MacDonald's Explorations, 2023",
+            title: "<i>Explorations 71</i>  (feat. Nava Dunkelman, percussion)",
+            description: "by Payton MacDonald's Explorations",
             details: "Nava Dunkelman and Payton MacDonald team up for a recording of sonic exploration. Email discussions, graphic scores, roadmaps, shared aesthetics in music and nature, and a few cups of tea all shaped these compositions.",
             date: "Released February 21, 2023",
             image: "images/payton_nava_explorations_71.jpg",
