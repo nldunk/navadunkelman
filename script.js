@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     z-index: 9999 !important;
                     display: flex !important;
                     flex-direction: column !important;
-                    justify-content: center !important;
+                    justify-content: flex-start !important;
                     align-items: center !important;
                     gap: 1rem !important;
-                    padding: 2rem !important;
+                    padding: 6rem 2rem 2rem 2rem !important;
                     box-sizing: border-box !important;
                     overflow-y: auto !important;
                     -webkit-overflow-scrolling: touch !important;
