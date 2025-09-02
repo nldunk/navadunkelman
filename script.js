@@ -118,10 +118,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Closing menu');
                 navList.classList.remove('active');
                 document.body.style.overflow = '';
+                // Remove test element
+                const testEl = document.getElementById('menu-test');
+                if (testEl) testEl.remove();
             } else {
                 console.log('Opening menu');
                 navList.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                
+                // Add a simple test element to see if anything is working
+                const testEl = document.createElement('div');
+                testEl.id = 'menu-test';
+                testEl.style.cssText = 'position: fixed; top: 50px; left: 50px; width: 200px; height: 100px; background: red; color: white; z-index: 10000; display: flex; align-items: center; justify-content: center; font-size: 20px;';
+                testEl.textContent = 'MENU IS OPEN!';
+                document.body.appendChild(testEl);
             }
             
             // Animate hamburger menu

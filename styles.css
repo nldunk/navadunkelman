@@ -209,6 +209,11 @@ a:hover {
     touch-action: manipulation;
 }
 
+/* Test: Always show mobile menu toggle for debugging */
+.mobile-menu-toggle {
+    display: flex !important;
+}
+
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
