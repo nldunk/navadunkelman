@@ -1110,6 +1110,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         overflow-y: auto;
+        display: flex;
     }
     
     .nav-list.active {
@@ -1130,12 +1131,19 @@ a:hover {
         box-shadow: none;
     }
     
+    .nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+    
     .nav-link {
         font-size: 1.2rem;
         padding: 1rem 0;
         text-align: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         width: 100%;
+        display: block;
+        color: #333;
     }
     
     .nav-link:last-child {
