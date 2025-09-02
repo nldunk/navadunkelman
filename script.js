@@ -150,6 +150,51 @@ document.addEventListener('DOMContentLoaded', function() {
                     -webkit-overflow-scrolling: touch !important;
                 `;
                 
+                // Add close button
+                const closeButton = document.createElement('button');
+                closeButton.innerHTML = '×';
+                closeButton.style.cssText = `
+                    position: absolute !important;
+                    top: 1rem !important;
+                    right: 1rem !important;
+                    background: none !important;
+                    border: none !important;
+                    font-size: 2rem !important;
+                    color: #333 !important;
+                    cursor: pointer !important;
+                    padding: 0.5rem !important;
+                    z-index: 10000 !important;
+                    width: 3rem !important;
+                    height: 3rem !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    border-radius: 50% !important;
+                    transition: all 0.3s ease !important;
+                `;
+                
+                // Add hover effect for close button
+                closeButton.addEventListener('mouseenter', () => {
+                    closeButton.style.backgroundColor = 'rgba(0,0,0,0.1)';
+                });
+                closeButton.addEventListener('mouseleave', () => {
+                    closeButton.style.backgroundColor = 'transparent';
+                });
+                
+                // Close menu when X is clicked
+                closeButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    mobileMenu.remove();
+                    // Reset hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                });
+                
+                mobileMenu.appendChild(closeButton);
+                
                 // Add menu items (excluding projects - will add separately)
                 const menuItems = [
                     { name: 'home', url: 'index.html' },
