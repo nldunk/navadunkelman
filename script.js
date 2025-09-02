@@ -57,11 +57,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 600);
     }
     
-    // Load page-specific content
+    // Load page-specific content only if the data is available
     console.log('Loading page-specific content...');
-    loadShows();
-    loadMedia();
-    loadReleases();
+    
+    // Only load shows if showsData is available
+    if (typeof showsData !== 'undefined') {
+        loadShows();
+    }
+    
+    // Only load media if mediaData is available
+    if (typeof mediaData !== 'undefined') {
+        loadMedia();
+    }
+    
+    // Only load releases if releasesData is available
+    if (typeof releasesData !== 'undefined') {
+        loadReleases();
+    }
     
     // Contact Form Functionality
     // Check if we're on the contact page and if the form was just submitted
@@ -296,69 +308,17 @@ if (document.readyState === 'loading') {
     preloadCriticalResources();
 }
 
-// Contact Form Handling
+// Contact Form Handling - Web3Forms handles submission, we just handle success message
 document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            // Simple validation
-            if (!name || !email || !subject || !message) {
-                showMessage('Please fill in all fields', 'error');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showMessage('Please enter a valid email address', 'error');
-                return;
-            }
-            
-            // Show loading state
-            const submitBtn = this.querySelector('.submit-btn');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate sending (for demo purposes)
-            setTimeout(() => {
-                showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1000);
-        });
+    // Load and render shows if we're on the shows page and data is available
+    if (typeof showsData !== 'undefined') {
+        loadShows();
     }
     
-    function showMessage(message, type) {
-        if (formMessage) {
-            formMessage.textContent = message;
-            formMessage.className = `form-message ${type}`;
-            formMessage.style.display = 'block';
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        }
+    // Load and render media if we're on the media page and data is available
+    if (typeof mediaData !== 'undefined') {
+        loadMedia();
     }
-    
-    // Load and render shows if we're on the shows page
-    loadShows();
-    
-    // Load and render media if we're on the media page
-    loadMedia();
 });
 
 // Function to load and render shows

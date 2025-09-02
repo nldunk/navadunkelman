@@ -64,40 +64,37 @@
     <main class="main-content page-content">
         <!-- Contact Section -->
         <section class="contact-section">
-            <div class="container">
-                <h2 class="section-title fade-in">For Booking // General Inquires // Lessons</h2>
-                <div class="contact-content">
-                    <div class="contact-form fade-in centered-form">
-                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="e35701f4-e47b-424a-a550-9fe371d97968">
-                            <input type="hidden" name="redirect" value="https://navadunkelman.github.io/navadunkelman/contact.html?sent=true">
-                            
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Name *" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Email *" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">Send</button>
-                        </form>
-                        <div id="formMessage" class="form-message"></div>
-                        
-                        <!-- Success message that appears after form submission -->
-                        <div id="successMessage" class="success-message" style="display: none;">
-                            <h4>Thank you!</h4>
-                            <p>Your message has been sent successfully. I'll get back to you soon!</p>
-                        </div>
+            <h2 class="section-title fade-in">For Booking // General Inquires // Lessons</h2>
+            <div class="contact-form fade-in centered-form">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e35701f4-e47b-424a-a550-9fe371d97968">
+                    
+
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name *" required>
                     </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email *" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+                
+                <!-- Success message that appears after form submission -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h4>Thank you!</h4>
+                    <p>Your message has been sent successfully. I'll get back to you soon!</p>
                 </div>
             </div>
         </section>
@@ -117,6 +114,7 @@
                     <img src="images/bandcamp-button-bc-circle-grey/bandcamp-button-bc-circle-grey-64.png" 
                          alt="Bandcamp Icon" class="social-icon">
                 </a>
+            </li>
         </ul>
     </div>
 
@@ -129,5 +127,43 @@
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
+    <script>
+        // Handle contact form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            if (contactForm && successMessage) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent default form submission
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    
+                    // Submit to Web3Forms
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Show success message
+                            contactForm.style.display = 'none';
+                            successMessage.style.display = 'block';
+                            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        } else {
+                            // Show error message
+                            alert('There was an error submitting the form. Please try again.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('There was an error submitting the form. Please try again.');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

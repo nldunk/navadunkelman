@@ -549,23 +549,19 @@ a:hover {
 .contact-section {
     padding: 0.75rem 0;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-section .container {
     max-width: none !important;
-    width: 100% !important;
+    width: 100vw !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-.contact-section {
-    padding: 0.75rem 0;
-    background: #fff;
-    margin-left: -10rem !important;
-    margin-right: -10rem !important;
-    width: calc(100% + 20rem) !important;
+    margin-left: -16rem !important;
+    margin-right: -16rem !important;
 }
 
 .contact-content {
@@ -632,17 +628,26 @@ a:hover {
     background: transparent;
     padding: 0.5rem 0;
     border-radius: 0;
-    width: 100% !important;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     justify-content: center;
-    max-width: none !important;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .centered-form {
-    max-width: 1400px !important;
-    width: 100% !important;
+    max-width: 600px;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin: 0 auto;
+}
+
+/* Contact form styling */
+#contactForm {
+    width: 100%;
+    max-width: 600px;
 }
 
 .form-group {
@@ -659,7 +664,7 @@ a:hover {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 1.5rem 1.2rem;
+    padding: 0.5rem 0.5rem;
     border: none;
     border-radius: 0;
     background-color: #F5F0E8;
@@ -691,7 +696,7 @@ a:hover {
     background: #A08A7A;
     color: white;
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 0;
     font-size: 1rem;
     font-weight: 500;
@@ -714,6 +719,8 @@ a:hover {
     background: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
+    clear: both;
+    width: 100%;
 }
 
 .success-message h4 {

@@ -54,6 +54,9 @@ const showsData = {
     ],
 };
 
+// Make showsData globally available
+window.showsData = showsData;
+
 // Export for use in other files
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = showsData;
