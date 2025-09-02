@@ -1176,6 +1176,10 @@ social-list {
         text-align: center;
     }
     
+    .about-text {
+        text-align: left;
+    }
+    
     .about-text h2 {
         font-size: 2.5rem;
     }
