@@ -1280,16 +1280,22 @@ social-list {
     .about-image .photo-credit {
         margin-left: 0 !important;
         text-align: left !important;
+        background-color: yellow !important;
+        padding: 0.5rem !important;
     }
     
     .ima-page .photo-credit {
         margin-left: 0 !important;
         text-align: left !important;
+        background-color: yellow !important;
+        padding: 0.5rem !important;
     }
     
     .nomon-page .photo-credit {
         margin-left: 0 !important;
         text-align: left !important;
+        background-color: yellow !important;
+        padding: 0.5rem !important;
     }
     
     .social-list {
