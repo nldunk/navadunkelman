@@ -1172,6 +1172,23 @@ a:hover {
         height: 50px;
     }
     
+    /* Smoother page transitions for mobile */
+    .page-transition {
+        transition: opacity 0.4s ease-out;
+    }
+    
+    .page-content-animate {
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+    
+    .page-content-animate.fade-out {
+        transform: translateY(-10px);
+    }
+    
+    .page-content-animate.fade-in {
+        transform: translateY(10px);
+    }
+    
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
