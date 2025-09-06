@@ -17,6 +17,12 @@ const showsData = {
             location: "Beijing Music Festival, Beijing, China"
         },
         {
+            date: "October 21",
+            time: "TBA",
+            title: 'nOMON (Nava solo)',
+            location: "Jewish Museum, New York, NY more info TBA"
+        },
+        {
             date: "November 7",
             time: "2:00PM & 7:00PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
