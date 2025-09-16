@@ -5,12 +5,6 @@
 const showsData = {
     upcoming: [
         {
-            date: "September 12",
-            time: "8:00PM",
-            title: "Duo with Chuck Bettis",
-            location: "Lava Club, Brooklyn, NY"
-        },
-        {
             date: "October 12",
             time: "7:30PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
