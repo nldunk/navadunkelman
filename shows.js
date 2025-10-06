@@ -13,8 +13,8 @@ const showsData = {
         {
             date: "October 21",
             time: "TBA",
-            title: 'nOMON (Nava solo)',
-            location: "Jewish Museum, New York, NY more info TBA"
+            title: 'Nava Dunkelman solo',
+            location: "Jewish Museum, New York, NY"
         },
         {
             date: "November 7",
