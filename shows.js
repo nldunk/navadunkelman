@@ -48,12 +48,6 @@ const showsData = {
             title: "Trio with William Winant and Bill Nace",
             location: "The Stone, New York, NY"
         },
-        {
-            date: "December 5",
-            time: "8:30PM",
-            title: "Trio with William Winant and Zeena Parkins",
-            location: "The Stone, New York, NY"
-        }
     ],
     
     upcoming2026: [
