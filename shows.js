@@ -36,6 +36,13 @@ const showsData = {
             moreInfo: "https://www.lincolncenter.org/series/lincoln-center-presents/the-ocean-etched-in-the-forest-890"
         },
         {
+            date: "November 14",
+            time: "6:30PM",
+            title: 'World Poetry Salon: Luljeta Lleshanaku, Nava Dunkelman, and Patricio Ferrari',
+            location: "Stavros Niarchos Foundation Library (SNFL), New York, NY",
+            moreInfo: "https://www.nypl.org/events/programs/2025/11/14/world-poetry-salon-luljeta-lleshanaku-nava-dunkelman-and-patricio-ferrari"
+        },
+        {
             date: "November 25",
             time: "6:30PM",
             title: '<i>CONTACT IMPROVISATION</i> : Duo with Maria Takeuchi',
