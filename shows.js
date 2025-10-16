@@ -23,7 +23,7 @@ const showsData = {
             location: "Pianos, New York, NY"
         },
         {
-            date: "Novemver 2",
+            date: "November 2",
             time: "7:00PM",
             title: 'Trio with Hisham Akira Bharoocha and Leila Bordreuil',
             location: "Pianos, New York, NY"
