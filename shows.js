@@ -38,7 +38,7 @@ const showsData = {
         {
             date: "November 14",
             time: "6:30PM",
-            title: 'World Poetry Salon: Luljeta Lleshanaku, Nava Dunkelman, and Patricio Ferrari',
+            title: '<i>World Poetry Salon</i>: Luljeta Lleshanaku, Nava Dunkelman, and Patricio Ferrari</i>',
             location: "Stavros Niarchos Foundation Library (SNFL), New York, NY",
             moreInfo: "https://www.nypl.org/events/programs/2025/11/14/world-poetry-salon-luljeta-lleshanaku-nava-dunkelman-and-patricio-ferrari"
         },
