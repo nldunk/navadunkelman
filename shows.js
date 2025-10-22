@@ -5,18 +5,6 @@
 const showsData = {
     upcoming: [
         {
-            date: "October 12",
-            time: "7:30PM",
-            title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
-            location: "Beijing Music Festival, Beijing, China"
-        },
-        {
-            date: "October 21",
-            time: "TBA",
-            title: 'Nava Dunkelman solo',
-            location: "Jewish Museum, New York, NY"
-        },
-        {
             date: "October 26",
             time: "7:00PM",
             title: 'IMA',
