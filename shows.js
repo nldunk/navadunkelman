@@ -43,6 +43,13 @@ const showsData = {
             title: "Trio with William Winant and Bill Nace",
             location: "The Stone, New York, NY"
         },
+        {
+            date: "December 11",
+            time: "7:00PM",
+            title: "<i>NOMON RELEASE SHOW</i> with Kambaba and Angélica Negrón",
+            location: "Ki Smith Gallery, New York, NY",
+            moreInfo: "https://www.kismithgallery.com/event-details/nomon-at-ki-smith-gallery"
+        },
     ],
     
     upcoming2026: [
