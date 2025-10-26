@@ -17,7 +17,7 @@ const showsData = {
             location: "Pianos, New York, NY"
         },
         {
-            date: "November 7",
+            date: "November 7 <i>CANCELLED</i>",
             time: "2:00PM & 7:00PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
             location: "Lincoln Center, New York, NY",
