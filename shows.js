@@ -5,18 +5,6 @@
 const showsData = {
     upcoming: [
         {
-            date: "October 26",
-            time: "7:00PM",
-            title: 'IMA',
-            location: "Pianos, New York, NY"
-        },
-        {
-            date: "November 2",
-            time: "7:00PM",
-            title: 'Trio with Hisham Akira Bharoocha and Leila Bordreuil',
-            location: "Pianos, New York, NY"
-        },
-        {
             date: "November 7 <i>CANCELLED</i>",
             time: "2:00PM & 7:00PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
@@ -42,6 +30,13 @@ const showsData = {
             time: "8:30PM",
             title: "Trio with William Winant and Bill Nace",
             location: "The Stone, New York, NY"
+        }
+        ,{
+            date: "December 5",
+            time: "6:30PM",
+            title: "<i>NOMON RELEASE LISTENING PARTY</i>",
+            location: "Public Records UPSTAIRS, Brooklyn, NY",
+            moreInfo: "more info TBA"
         },
         {
             date: "December 11",
