@@ -5,6 +5,14 @@
 const releasesData = {
     releases: [
         {
+            title: "NOMON - <i>Echoes of Breakage</i>",
+            description: "Otherlylove, 2025",
+            details: "Echoes of Breakage is the debut album from New York’s NOMON, the sister duo of percussionists Shayna and Nava Dunkelman. Building on the deft collision of traditional Asian sounds, electronics, and contemporary percussion music established on the duo’s 2021 EP Card II, the new album captures dramatic artistic growth and sonic expansion. The duo’s deep roots in percussion music have been increasingly complimented by the seamless incorporation of electronics and long-form compositional ideas. They’ve arrived at a bracing marriage of past, present, and future, making sense of disparate individual musical practices. Echoes of Breakage boldly elides any sort of stylistic convention, instead tapping into instinct and careful listening to bring seemingly incongruous ideas together, whether it’s how gamelan-inspired breakdowns are subsumed by moody electronic soundscapes or the way they build slow-build dramatic tension through meticulously measured interaction where every gesture is carefully weighted.<br><br>Shayna Dunkelman - percussion and electronics<br>Nava Dunkelman - percussion and electronics",
+            date: "Pre-order available, release date: December 5, 2025",
+            image: "images/NOMON_Echoes of Breakage.JPG",
+            listenBuyUrl: "https://nomonmusic.bandcamp.com/album/echoes-of-breakage" // Replace with actual URL
+        },
+        {
             title: "Brandon Seabrook's Epic Proportions - <i>bruralovechamp</i>",
             description: "Pyroclastic Records, 2023",
             details: "Brandon Seabrook - Guitar, Mandolin, Banjo\nNava Dunkelman - Percussion, Glockenspiel, Voice\nMarika Hughes - Cello\nEivind Opsvik - Contra Bass\nHenry Fraser - Contra Bass\nChuck Bettis - Electronics, Voice\nJohn McCowen - Contrabass Clarinet, Bb clarinet, Alto and Bass Recorder\nSam Ospovat - Drum Set, Chromatic Thai Nipple Gongs, Vibraphone, Concert Chimes",
