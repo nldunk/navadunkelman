@@ -71,8 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Only load releases if releasesData is available
+    // Add retry mechanism in case releases.js loads after this check
     if (typeof releasesData !== 'undefined') {
         loadReleases();
+    } else {
+        // Retry after a short delay in case releases.js is still loading
+        setTimeout(function() {
+            if (typeof releasesData !== 'undefined') {
+                loadReleases();
+            }
+        }, 100);
     }
     
     // Contact Form Functionality
