@@ -75,6 +75,94 @@
             margin-left: 4.2rem !important;
         }
         
+        /* Compact Related Releases Section */
+        .related-releases-compact {
+            margin-top: 2.5rem;
+            text-align: left;
+        }
+        
+        .related-releases-title-compact {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-family: 'Forum', serif;
+            font-weight: 400;
+            text-align: left;
+        }
+        
+        .related-releases-grid-compact {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        
+        .related-release-item-compact {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            max-width: 120px;
+        }
+        
+        .related-release-item-compact:hover {
+            transform: translateY(-3px);
+            opacity: 0.85;
+        }
+        
+        .related-release-img-compact {
+            width: 120px;
+            height: auto;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .related-release-title-text {
+            font-size: 0.75rem;
+            color: #333;
+            font-family: 'Forum', serif;
+            font-weight: 400;
+            line-height: 1.4;
+            text-align: left;
+            margin-top: 0.25rem;
+        }
+        
+        .related-release-title-text i {
+            font-style: italic;
+        }
+        
+        /* Align releases with bio photo on desktop - same width as photo */
+        @media (min-width: 769px) {
+            .nomon-page .related-releases-compact {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .related-releases-compact {
+                margin-top: 2rem;
+            }
+            
+            .related-releases-grid-compact {
+                gap: 0.75rem;
+            }
+            
+            .related-release-item-compact {
+                max-width: 100px;
+            }
+            
+            .related-release-img-compact {
+                width: 100px;
+            }
+            
+            .related-release-title-text {
+                font-size: 0.7rem;
+            }
+        }
 
     </style>
     
@@ -124,6 +212,21 @@
                     <div class="about-image">
                         <img src="images/NOMON ECHOES HEADSHOT.JPG" alt="NOMON Project" class="about-img">
                         <div class="photo-credit">Photo by Dayan Liu</div>
+                        
+                        <!-- Related Releases Section -->
+                        <div class="related-releases-compact">
+                            <h3 class="related-releases-title-compact">Related releases</h3>
+                            <div class="related-releases-grid-compact">
+                                <a href="https://nomonmusic.bandcamp.com/album/echoes-of-breakage" target="_blank" rel="noopener noreferrer" class="related-release-item-compact">
+                                    <img src="images/NOMON_Echoes of Breakage.JPG" alt="NOMON - Echoes of Breakage" class="related-release-img-compact">
+                                    <div class="related-release-title-text"><i>Echoes of Breakage</i></div>
+                                </a>
+                                <a href="https://nomonmusic.bandcamp.com/album/card-ii" target="_blank" rel="noopener noreferrer" class="related-release-item-compact">
+                                    <img src="images/Nomon Card II_website.png" alt="NOMON - Card II" class="related-release-img-compact">
+                                    <div class="related-release-title-text"><i>Card II</i></div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="about-text">
