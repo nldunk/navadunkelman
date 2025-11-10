@@ -61,8 +61,16 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Loading page-specific content...');
     
     // Only load shows if showsData is available
+    // Add retry mechanism in case shows.js loads after this check
     if (typeof showsData !== 'undefined') {
         loadShows();
+    } else {
+        // Retry after a short delay in case shows.js is still loading
+        setTimeout(function() {
+            if (typeof showsData !== 'undefined') {
+                loadShows();
+            }
+        }, 100);
     }
     
     // Only load media if mediaData is available
@@ -569,8 +577,16 @@ if (document.readyState === 'loading') {
 // Contact Form Handling - Web3Forms handles submission, we just handle success message
 document.addEventListener('DOMContentLoaded', function() {
     // Load and render shows if we're on the shows page and data is available
+    // Add retry mechanism in case shows.js loads after this check
     if (typeof showsData !== 'undefined') {
         loadShows();
+    } else {
+        // Retry after a short delay in case shows.js is still loading
+        setTimeout(function() {
+            if (typeof showsData !== 'undefined') {
+                loadShows();
+            }
+        }, 100);
     }
     
     // Load and render media if we're on the media page and data is available
