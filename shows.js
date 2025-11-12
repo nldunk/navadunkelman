@@ -29,7 +29,7 @@ const showsData = {
             time: "6:30PM",
             title: "<i>NOMON RELEASE LISTENING PARTY</i>",
             location: "Public Records UPSTAIRS, Brooklyn, NY",
-            moreInfo: "more info TBA"
+            moreInfo: "https://link.dice.fm/redf0461f735?dice_id=redf0461f735"
         },
         {
             date: "December 11",
