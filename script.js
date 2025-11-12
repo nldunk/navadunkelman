@@ -634,7 +634,7 @@ function createShowHTML(show) {
             <div class="show-location">${show.location}`;
     
     if (show.moreInfo) {
-        html += `<a href="${show.moreInfo}" target="_blank" class="more-info-link">more info</a>`;
+        html += `<a href="${show.moreInfo}" target="_blank" class="more-info-link">more info and tickets</a>`;
     }
     
     html += `</div></div>`;
