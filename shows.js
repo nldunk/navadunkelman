@@ -27,14 +27,14 @@ const showsData = {
         ,{
             date: "December 5",
             time: "6:30PM",
-            title: "<i>NOMON RELEASE LISTENING PARTY</i>",
+            title: "<i>NOMON ALBUMRELEASE LISTENING PARTY</i>",
             location: "Public Records UPSTAIRS, Brooklyn, NY",
             moreInfo: "https://link.dice.fm/redf0461f735?dice_id=redf0461f735"
         },
         {
             date: "December 11",
             time: "7:00PM",
-            title: "<i>NOMON RELEASE SHOW</i> with Kambaba and Angélica Negrón",
+            title: "<i>NOMON ALBUMRELEASE SHOW</i> with Kambaba and Angélica Negrón",
             location: "Ki Smith Gallery, New York, NY",
             moreInfo: "https://www.kismithgallery.com/event-details/nomon-at-ki-smith-gallery"
         },
