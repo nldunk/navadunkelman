@@ -5,13 +5,6 @@
 const showsData = {
     upcoming: [
         {
-            date: "November 14",
-            time: "6:30PM",
-            title: '<i>World Poetry Salon</i>: Luljeta Lleshanaku, Nava Dunkelman, and Patricio Ferrari',
-            location: "Stavros Niarchos Foundation Library (SNFL), New York, NY",
-            moreInfo: "https://www.nypl.org/events/programs/2025/11/14/world-poetry-salon-luljeta-lleshanaku-nava-dunkelman-and-patricio-ferrari"
-        },
-        {
             date: "November 25",
             time: "6:30PM",
             title: '<i>CONTACT IMPROVISATION</i> : Duo with Maria Takeuchi',
