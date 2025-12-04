@@ -1,4 +1,17 @@
   {
+            date: "December 3",
+            time: "8:30PM",
+            title: "Trio with William Winant and Bill Nace",
+            location: "The Stone, New York, NY"
+        }
+        {
+            date: "November 25",
+            time: "6:30PM",
+            title: '<i>CONTACT IMPROVISATION</i> : Duo with Maria Takeuchi',
+            location: "Open Arts Studio, Brooklyn, NY",
+            moreInfo: "https://chingichang.com/contact-improvisation-jam/2025/11/25/nava/maria"
+        },
+        {
             date: "November 14",
             time: "6:30PM",
             title: '<i>World Poetry Salon</i>: Luljeta Lleshanaku, Nava Dunkelman, and Patricio Ferrari',

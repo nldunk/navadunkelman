@@ -4,19 +4,6 @@
 
 const showsData = {
     upcoming: [
-        {
-            date: "November 25",
-            time: "6:30PM",
-            title: '<i>CONTACT IMPROVISATION</i> : Duo with Maria Takeuchi',
-            location: "Open Arts Studio, Brooklyn, NY",
-            moreInfo: "https://chingichang.com/contact-improvisation-jam/2025/11/25/nava/maria"
-        },
-        {
-            date: "December 3",
-            time: "8:30PM",
-            title: "Trio with William Winant and Bill Nace",
-            location: "The Stone, New York, NY"
-        }
         ,{
             date: "December 5",
             time: "6:30PM",
@@ -35,10 +22,17 @@ const showsData = {
     
     upcoming2026: [
         {
+            date: "February 11",
+            time: "8:00PM",
+            title: "Michael Foster with Strings",
+            location: "Roulette, Brooklyn, NY",
+            moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
+        },
+        {
             date: "March 26",
             time: "8:30PM",
             title: "Trio with Theresa Wong and Jane Rigler",
-            location: "The Stone, New York, NY"
+            location: "The Stone, New York, NY",
         },
     ],
 };
