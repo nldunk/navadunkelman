@@ -597,10 +597,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to load and render shows
 function loadShows() {
+    console.log('loadShows function called');
     const upcomingShowsContainer = document.getElementById('upcoming-shows');
     const upcomingShows2026Container = document.getElementById('upcoming-shows-2026');
     
-    if (!upcomingShowsContainer) {
+    console.log('Containers found:', {
+        upcoming2025: !!upcomingShowsContainer,
+        upcoming2026: !!upcomingShows2026Container
+    });
+    
+    // Check if we're on the shows page (either container should exist)
+    if (!upcomingShowsContainer && !upcomingShows2026Container) {
+        console.log('Not on shows page - no containers found');
         return; // Not on shows page
     }
     
@@ -610,18 +618,30 @@ function loadShows() {
         return;
     }
     
-    // Render upcoming shows (2025)
-    if (showsData.upcoming && showsData.upcoming.length > 0) {
-        upcomingShowsContainer.innerHTML = showsData.upcoming.map(show => createShowHTML(show)).join('');
-    } else {
-        upcomingShowsContainer.innerHTML = '<p class="no-shows">No upcoming shows scheduled</p>';
+    console.log('Shows data found:', showsData);
+    console.log('upcoming2026 data:', showsData.upcoming2026);
+    
+    // Render upcoming shows (2025) - if container exists
+    if (upcomingShowsContainer) {
+        if (showsData.upcoming && showsData.upcoming.length > 0) {
+            upcomingShowsContainer.innerHTML = showsData.upcoming.map(show => createShowHTML(show)).join('');
+        } else {
+            upcomingShowsContainer.innerHTML = '<p class="no-shows">No upcoming shows scheduled</p>';
+        }
     }
     
     // Render upcoming shows (2026)
-    if (upcomingShows2026Container && showsData.upcoming2026 && showsData.upcoming2026.length > 0) {
-        upcomingShows2026Container.innerHTML = showsData.upcoming2026.map(show => createShowHTML(show)).join('');
-    } else if (upcomingShows2026Container) {
-        upcomingShows2026Container.innerHTML = '<p class="no-shows">No 2026 shows scheduled yet</p>';
+    if (upcomingShows2026Container) {
+        console.log('Rendering 2026 shows, count:', showsData.upcoming2026 ? showsData.upcoming2026.length : 0);
+        if (showsData.upcoming2026 && showsData.upcoming2026.length > 0) {
+            upcomingShows2026Container.innerHTML = showsData.upcoming2026.map(show => createShowHTML(show)).join('');
+            console.log('2026 shows rendered');
+        } else {
+            upcomingShows2026Container.innerHTML = '<p class="no-shows">No 2026 shows scheduled yet</p>';
+            console.log('No 2026 shows to render');
+        }
+    } else {
+        console.log('2026 container not found');
     }
 }
 
