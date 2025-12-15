@@ -3,16 +3,6 @@
 // Format: Each show has date, time, title, location, and optional moreInfo link
 
 const showsData = {
-    upcoming: [
-        {
-            date: "December 11",
-            time: "7:00PM",
-            title: "<i>NOMON ALBUMRELEASE SHOW</i> with Kambaba and Angélica Negrón",
-            location: "Ki Smith Gallery, New York, NY",
-            moreInfo: "https://www.kismithgallery.com/event-details/nomon-at-ki-smith-gallery"
-        },
-    ],
-    
     upcoming2026: [
         {
             date: "February 11",
