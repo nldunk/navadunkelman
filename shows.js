@@ -8,7 +8,7 @@ const showsData = {
             date: "January 22",
             time: "7:00PM",
             title: "<i>Inter(Space) by Arts for Arts</i>, Duo with Chuck Bettis",
-            location: "Nublu Classic, Brooklyn, NY",
+            location: "Nublu Classic, New York, NY",
             moreInfo: "https://www.artsforart.org/event/interspace-jan-22/"
         },{
             date: "January 28",
