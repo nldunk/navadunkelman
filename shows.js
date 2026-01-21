@@ -20,13 +20,12 @@ const showsData = {
         {
             date: "February 3",
             time: "8:00PM",
-            title: "Michael Foster with Strings",
-            location: "Roulette, Brooklyn, NY",
-            moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
+            title: "Duo with Chuck Bettis",
+            location: "Threes Brewing, Brooklyn, NY",
         },{
             date: "February 11",
             time: "8:00PM",
-            title: "Duo with Chuck Bettis",
+            title: "Michael Foster with Strings",
             location: "Roulette, Brooklyn, NY",
             moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
         },
