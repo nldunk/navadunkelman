@@ -16,10 +16,17 @@ const showsData = {
             title: "<i>2026 Composers Now Festival Kick-Off Concert</i> with Pauchi Sasaki",
             location: "National Sawdust, Brooklyn, NY",
             moreInfo: "https://www.nationalsawdust.org/event/2026-composers-now-festival-kick-off-concert"
+        },
+        {
+            date: "February 3",
+            time: "8:00PM",
+            title: "Michael Foster with Strings",
+            location: "Roulette, Brooklyn, NY",
+            moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
         },{
             date: "February 11",
             time: "8:00PM",
-            title: "Michael Foster with Strings",
+            title: "Duo with Chuck Bettis",
             location: "Roulette, Brooklyn, NY",
             moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
         },
