@@ -30,6 +30,12 @@ const showsData = {
             moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
         },
         {
+            date: "February 16",
+            time: "7:00PM",
+            title: "Trio with Hisham Akira Bharoocha and Leila Bordreuil",
+            location: "Artists Space, New York, NY",
+        },
+        {
             date: "March 26",
             time: "8:30PM",
             title: "Trio with Theresa Wong and Jane Rigler",
