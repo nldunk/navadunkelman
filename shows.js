@@ -30,6 +30,18 @@ const showsData = {
             title: "Trio with Theresa Wong and Jane Rigler",
             location: "The Stone, New York, NY",
         },
+        {
+            date: "November 6",
+            time: "8:30PM",
+            title: "Trio with Zeena Parkins and Nate Wooley",
+            location: "The Stone, New York, NY",
+        },
+        {
+            date: "December 10",
+            time: "8:30PM",
+            title: "Trio with Ikue Mori and gabby fluke-mogul",
+            location: "The Stone, New York, NY",
+        }
     ],
 };
 
