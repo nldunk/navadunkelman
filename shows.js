@@ -5,24 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "January 22",
-            time: "7:00PM",
-            title: "<i>Inter(Space) by Arts for Arts</i>, Duo with Chuck Bettis",
-            location: "Nublu Classic, New York, NY",
-            moreInfo: "https://www.artsforart.org/event/interspace-jan-22/"
-        },{
-            date: "January 28",
-            time: "6:30PM",
-            title: "<i>2026 Composers Now Festival Kick-Off Concert</i> with Pauchi Sasaki",
-            location: "National Sawdust, Brooklyn, NY",
-            moreInfo: "https://www.nationalsawdust.org/event/2026-composers-now-festival-kick-off-concert"
-        },
-        {
-            date: "February 3",
-            time: "8:00PM",
-            title: "Duo with Chuck Bettis",
-            location: "Threes Brewing, Brooklyn, NY",
-        },{
             date: "February 11",
             time: "8:00PM",
             title: "Michael Foster with Strings",
@@ -34,6 +16,13 @@ const showsData = {
             time: "7:00PM",
             title: "Trio with Hisham Akira Bharoocha and Leila Bordreuil",
             location: "Artists Space, New York, NY",
+        },
+        {
+            date: "February 21",
+            time: "7:00PM",
+            title: "Solo (electronics and voice) at <i>Molto Ohm Album Release Show</i>",
+            location: "Light and sound design, Brooklyn, NY",
+            moreInfo: "https://www.eventcreate.com/e/molto-ohm"
         },
         {
             date: "March 26",
