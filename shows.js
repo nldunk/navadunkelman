@@ -25,6 +25,13 @@ const showsData = {
             moreInfo: "https://www.eventcreate.com/e/molto-ohm"
         },
         {
+            date: "March 11",
+            time: "7:30PM",
+            title: "performing in <i>Wičhínčala Šakówin</i> by KITE",
+            location: "Caenegie Hall, Zankel Hall, New York, NY",
+            moreInfo: "https://www.carnegiehall.org/calendar/2026/03/11/american-composers-orchestra-0730pm"
+        },
+        {
             date: "March 26",
             time: "8:30PM",
             title: "Trio with Theresa Wong and Jane Rigler",
