@@ -36,6 +36,36 @@
         .logo h1 { font-size: 3rem; color: #333; margin: 0; }
         .nav-list { display: flex; list-style: none; gap: 0; }
         
+        /* Website button styles */
+        .website-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: white !important;
+            color: #333 !important;
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            border: 1px solid #333 !important;
+            transition: all 0.3s ease;
+            font-family: 'Forum', serif;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+        
+        .nomon-links .website-btn {
+            color: #333 !important;
+            border-color: #333 !important;
+        }
+        
+        .website-btn:hover {
+            background: #8B0000 !important;
+            color: white !important;
+        }
+        
+        .nomon-links .website-btn:hover {
+            color: white !important;
+        }
+        
         /* Social icon hover effects */
         .social-icon {
             transition: transform 0.3s ease !important;
@@ -241,6 +271,7 @@
                         <p>Shayna and Nava continue to push boundaries in their exploration of sound, forging a unique artistic identity that resonates across genres and cultures.</p>
                         
                         <div class="nomon-links">
+                            <a href="https://nomon.fm" target="_blank" rel="noopener noreferrer" class="website-btn" style="color: #333 !important; border-color: #333 !important;">NOMON.FM</a>
                             <a href="https://nomonmusic.bandcamp.com/" target="_blank" rel="noopener noreferrer" class="social-link">
                                 <img src="images/bandcamp-button-bc-circle-grey/bandcamp-button-bc-circle-grey-64.png" alt="Bandcamp" class="social-icon">
                             </a>
@@ -274,6 +305,18 @@
 
     <!-- JavaScript -->
     <script src="script.js?v=20251103"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const websiteBtn = document.querySelector('.nomon-links .website-btn');
+            if (websiteBtn) {
+                websiteBtn.addEventListener('mouseenter', function() {
+                    this.style.color = 'white';
+                });
+                websiteBtn.addEventListener('mouseleave', function() {
+                    this.style.color = '#333';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
