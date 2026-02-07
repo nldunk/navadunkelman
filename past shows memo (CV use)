@@ -1,12 +1,28 @@
    upcoming: [
         {
+            date: "February 3",
+            time: "8:00PM",
+            title: "Duo with Chuck Bettis",
+            location: "Threes Brewing, Brooklyn, NY",
+        },{
+            date: "January 28",
+            time: "6:30PM",
+            title: "<i>2026 Composers Now Festival Kick-Off Concert</i> with Pauchi Sasaki",
+            location: "National Sawdust, Brooklyn, NY",
+            moreInfo: "https://www.nationalsawdust.org/event/2026-composers-now-festival-kick-off-concert"
+        },{
+            date: "January 22",
+            time: "7:00PM",
+            title: "<i>Inter(Space) by Arts for Arts</i>, Duo with Chuck Bettis",
+            location: "Nublu Classic, New York, NY",
+            moreInfo: "https://www.artsforart.org/event/interspace-jan-22/"
+        },{
             date: "December 11",
             time: "7:00PM",
             title: "<i>NOMON ALBUMRELEASE SHOW</i> with Kambaba and Angélica Negrón",
             location: "Ki Smith Gallery, New York, NY",
             moreInfo: "https://www.kismithgallery.com/event-details/nomon-at-ki-smith-gallery"
         },
-    ],
     {
             date: "December 5",
             time: "6:30PM",
@@ -18,7 +34,7 @@
             time: "8:30PM",
             title: "Trio with William Winant and Bill Nace",
             location: "The Stone, New York, NY"
-        }
+        },
         {
             date: "November 25",
             time: "6:30PM",
@@ -43,23 +59,23 @@
             time: "7:00PM",
             title: 'Trio with Hisham Akira Bharoocha and Leila Bordreuil',
             location: "Pianos, New York, NY"
-        }
+        },
         {
             date: "October 26",
             time: "7:00PM",
             title: 'IMA',
             location: "Pianos , New York, NY"
         },
-        ,{
+        {
             date: "October 21",
             time: "TBA",
             title: 'Nava Dunkelman solo',
             location: "Jewish Museum, New York, NY"
         },
-        
- date: "October 12",
+        {
+            date: "October 12",
             time: "7:30PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss',
             location: "Beijing Music Festival, Beijing, China"
-
-            
+        }
+    ]
