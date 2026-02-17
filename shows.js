@@ -5,19 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "February 11",
-            time: "8:00PM",
-            title: "Michael Foster with Strings",
-            location: "Roulette, Brooklyn, NY",
-            moreInfo: "https://roulette.org/event/michael-foster-with-strings-zosha-warpeha/"
-        },
-        {
-            date: "February 16",
-            time: "7:00PM",
-            title: "Trio with Hisham Akira Bharoocha and Leila Bordreuil",
-            location: "Artists Space, New York, NY",
-        },
-        {
             date: "February 21",
             time: "7:00PM",
             title: "Solo (electronics and voice) at <i>Molto Ohm Album Release Show</i>",
