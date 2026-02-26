@@ -5,6 +5,14 @@
 const releasesData = {
     releases: [
         {
+            title: "Nava Dunkelman & Masayo Kotetsu - <i>Veins of Rain</i>",
+            description: "Relative Pitch Records, 2026",
+            details: "Masayo Koketsu and Nava Dunkelman met for the first time in this studio session. Koketsu’s inventive use of extended techniques and breath-infused wails filled the space with an experimental intensity. Dunkelman responded with a finely woven tapestry of percussive textures, her delicate rhythms binding their sounds together. Her sensitivity to nuance allowed Koketsu’s raw cries to blend effortlessly, as if the two had long shared a musical language. Their exchange was both electric and restrained—an embodiment of spontaneous creation where surprise thrived, and each voice moved freely within a profound, almost familiar connection.<br><br>Masayo Koketsu - soprano saxophone<br>Nava Dunkelman - percussion",
+            date: "Released February 20, 2026",
+            image: "images/veins of rain FRONT + DISK.jpg",
+            listenBuyUrl: "https://relativepitchrecords.bandcamp.com/album/veins-of-rain" // Replace with actual URL
+        },
+        {
             title: "NOMON - <i>Echoes of Breakage</i>",
             description: "Otherly Love Records, 2025",
             details: "Echoes of Breakage is the debut album from New York’s NOMON, the sister duo of percussionists Shayna and Nava Dunkelman. Building on the deft collision of traditional Asian sounds, electronics, and contemporary percussion music established on the duo’s 2021 EP Card II, the new album captures dramatic artistic growth and sonic expansion. The duo’s deep roots in percussion music have been increasingly complimented by the seamless incorporation of electronics and long-form compositional ideas. They’ve arrived at a bracing marriage of past, present, and future, making sense of disparate individual musical practices. Echoes of Breakage boldly elides any sort of stylistic convention, instead tapping into instinct and careful listening to bring seemingly incongruous ideas together, whether it’s how gamelan-inspired breakdowns are subsumed by moody electronic soundscapes or the way they build slow-build dramatic tension through meticulously measured interaction where every gesture is carefully weighted.<br><br>Shayna Dunkelman - percussion and electronics<br>Nava Dunkelman - percussion and electronics",
