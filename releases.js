@@ -25,7 +25,7 @@ const releasesData = {
             description: "Relative Pitch Records, 2025",
             details: "In a spontaneous studio session, alto saxophonist Tim Berne met fellow saxophonist Masayo Koketsu and percussionist Nava Dunkelman for the first time, setting the stage for an improvisational encounter full of contrasts and surprising cohesion. Berne’s rich, dynamic tone, provided a grounded foundation, while Koketsu's innovative use of extended techniques and breathy, ethereal sounds—challenged the space with a more experimental edge. Dunkelman, with her textural percussion, wove between the two saxophones, creating a delicate web of sound that bound their voices together. Her sensitive approach to rhythm and subtle textures allowed the raw, unorthodox interplay of Berne and Koketsu to evolve seamlessly, as if they had been playing together for years. The trio's energy was electric, capturing the essence of spontaneous creation, where the unexpected flourished and each voice was allowed to speak freely, yet with a deep connection that made the entire session feel remarkably unified.<br><br>Tim Berne - alto saxophone<br>Masayo Koketsu - soprano saxophone<br>Nava Dunkelman - percussion",
             date: "Released April 25, 2025",
-            image: "images/Poiēsis_cover.jpg",
+            image: "images/poiesis cover.jpg",
             listenBuyUrl: "https://relativepitchrecords.bandcamp.com/album/poiesis" // Replace with actual URL
         },
         {
