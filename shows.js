@@ -5,13 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "February 21",
-            time: "7:00PM",
-            title: "Solo (electronics and voice) at <i>Molto Ohm Album Release Show</i>",
-            location: "Light and sound design, Brooklyn, NY",
-            moreInfo: "https://www.eventcreate.com/e/molto-ohm"
-        },
-        {
             date: "March 11",
             time: "7:30PM",
             title: "performing in <i>Wičhínčala Šakówin</i> by KITE",
