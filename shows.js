@@ -7,7 +7,7 @@ const showsData = {
         {
             date: "March 11",
             time: "7:30PM",
-            title: "performing in <i>Cosmologyscape</i> by KITE",
+            title: "performing in <i>Cosmologyscape</i> by Kite as a Cosmologyscape Ensemble",
             location: "Caenegie Hall, Zankel Hall, New York, NY",
             moreInfo: "https://www.carnegiehall.org/calendar/2026/03/11/american-composers-orchestra-0730pm"
         },
