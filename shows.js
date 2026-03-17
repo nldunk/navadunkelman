@@ -35,7 +35,13 @@ const showsData = {
             location: "The Stone, New York, NY",
         }
     ],
-    upcoming2027: [],
+    upcoming2027: [
+        {
+        date: "June 9-12",
+        time: "8:30PM",
+        title: "Nava Dunkelman The Stone Residency",
+        location: "The Stone, New York, NY",
+    }],
 };
 
 // Make showsData globally available
