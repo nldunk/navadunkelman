@@ -481,6 +481,7 @@ a:hover {
     font-family: 'Forum', serif;
     font-weight: 700;
     flex-shrink: 0;
+    min-width: 5.5rem;
 }
 
 .shows-main-content {
