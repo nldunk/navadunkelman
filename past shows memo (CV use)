@@ -1,5 +1,12 @@
    upcoming: [
     {
+        date: "March 11",
+        time: "7:30PM",
+        title: "performing in <i>Cosmologyscape</i> by Kite as a Cosmologyscape Ensemble",
+        location: "Caenegie Hall, Zankel Hall, New York, NY",
+        moreInfo: "https://www.carnegiehall.org/calendar/2026/03/11/american-composers-orchestra-0730pm"
+    },
+    {
         date: "February 21",
         time: "7:00PM",
         title: "Solo (electronics and voice) at <i>Molto Ohm Album Release Show</i>",
