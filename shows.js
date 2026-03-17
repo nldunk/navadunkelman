@@ -35,6 +35,7 @@ const showsData = {
             location: "The Stone, New York, NY",
         }
     ],
+    upcoming2027: [],
 };
 
 // Make showsData globally available

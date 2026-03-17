@@ -600,14 +600,16 @@ function loadShows() {
     console.log('loadShows function called');
     const upcomingShowsContainer = document.getElementById('upcoming-shows');
     const upcomingShows2026Container = document.getElementById('upcoming-shows-2026');
+    const upcomingShows2027Container = document.getElementById('upcoming-shows-2027');
     
     console.log('Containers found:', {
         upcoming2025: !!upcomingShowsContainer,
-        upcoming2026: !!upcomingShows2026Container
+        upcoming2026: !!upcomingShows2026Container,
+        upcoming2027: !!upcomingShows2027Container
     });
     
     // Check if we're on the shows page (either container should exist)
-    if (!upcomingShowsContainer && !upcomingShows2026Container) {
+    if (!upcomingShowsContainer && !upcomingShows2026Container && !upcomingShows2027Container) {
         console.log('Not on shows page - no containers found');
         return; // Not on shows page
     }
@@ -642,6 +644,20 @@ function loadShows() {
         }
     } else {
         console.log('2026 container not found');
+    }
+
+    // Render upcoming shows (2027)
+    if (upcomingShows2027Container) {
+        console.log('Rendering 2027 shows, count:', showsData.upcoming2027 ? showsData.upcoming2027.length : 0);
+        if (showsData.upcoming2027 && showsData.upcoming2027.length > 0) {
+            upcomingShows2027Container.innerHTML = showsData.upcoming2027.map(show => createShowHTML(show)).join('');
+            console.log('2027 shows rendered');
+        } else {
+            upcomingShows2027Container.innerHTML = '<p class="no-shows">No 2027 shows scheduled yet</p>';
+            console.log('No 2027 shows to render');
+        }
+    } else {
+        console.log('2027 container not found');
     }
 }
 
