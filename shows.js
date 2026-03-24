@@ -17,6 +17,12 @@ const showsData = {
             location: "The Stone, New York, NY",
         },
         {
+            date: "April 5",
+            time: "7:00PM",
+            title: "Trio with Tom Surgal and Lin Culbertson",
+            location: "Pianos, New York, NY",
+        },
+        {
             date: "September 4",
             time: "8:30PM",
             title: "Trio with Erik Friedlander and Myk Freedman",
