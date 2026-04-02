@@ -5,12 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "March 26",
-            time: "8:30PM",
-            title: "Trio with Theresa Wong and Jane Rigler",
-            location: "The Stone, New York, NY",
-        },
-        {
             date: "April 3",
             time: "8:30PM",
             title: "Trio with Tomeka Reid and Ikue Mori",
