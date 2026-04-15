@@ -5,18 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "April 3",
-            time: "8:30PM",
-            title: "Trio with Tomeka Reid and Ikue Mori",
-            location: "The Stone, New York, NY",
-        },
-        {
-            date: "April 5",
-            time: "7:00PM",
-            title: "Trio with Tom Surgal and Lin Culbertson",
-            location: "Pianos, New York, NY",
-        },
-        {
             date: "September 4",
             time: "8:30PM",
             title: "Trio with Erik Friedlander and Myk Freedman",
