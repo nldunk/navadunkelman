@@ -5,6 +5,13 @@
 const showsData = {
     upcoming2026: [
         {
+            date: "July 24",
+            time: "2:00PM and 7:00PM",
+            title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss (Shayna Dunkelman, Grey McMurray, Aakash Mittal)',
+            location: "Lincoln Center, New York, NY",
+            moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
+        },
+        {
             date: "September 4",
             time: "8:30PM",
             title: "Trio with Erik Friedlander and Myk Freedman",
