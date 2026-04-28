@@ -32,6 +32,12 @@ const showsData = {
     ],
     upcoming2027: [
         {
+            date: "January 9",
+            time: "8:30PM",
+            title: "with Shelley Hirsch, Ikue Mori, David Weinstein, Anthony Coleman, Jim Staley, and John Zorn",
+            location: "The Stone, New York, NY",
+        },
+        {
         date: "June 9-12",
         time: "8:30PM",
         title: "Nava Dunkelman The Stone Residency",
