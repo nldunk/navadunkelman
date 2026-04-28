@@ -5,6 +5,12 @@
 const showsData = {
     upcoming2026: [
         {
+            date: "May 30",
+            time: "4:00PM",
+            title: "<i>Four Handdreamers</i> with JJJJJerome Ellis, Robbie Wing, and Kite",
+            location: "MoMA PS1, Queens, NY",
+        },
+        {
             date: "July 24",
             time: "2:00PM and 7:00PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss (Shayna Dunkelman, Grey McMurray, Aakash Mittal)',
