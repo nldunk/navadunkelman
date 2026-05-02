@@ -5,6 +5,13 @@
 const showsData = {
     upcoming2026: [
         {
+            date: "May 28",
+            time: "7:30PM",
+            title: "<i>The Color of Pomegranates (1969)</i> Fundraising Film Screening Party",
+            location: "MITU580, Brooklyn, NY",
+            moreInfo: "https://theatermitu.ticketspice.com/mituthecolorofpomegranates"
+        },
+        {
             date: "May 30",
             time: "4:00PM",
             title: "<i>Four Handdreamers</i> with JJJJJerome Ellis, Robbie Wing, and Kite",
