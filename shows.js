@@ -16,6 +16,7 @@ const showsData = {
             time: "4:00PM",
             title: "<i>Four Handdreamers</i> with JJJJJerome Ellis, Robbie Wing, and Kite",
             location: "MoMA PS1, Queens, NY",
+            moreInfo: "https://www.momaps1.org/en/events/750-tom-thayer-chang-yuchen-kameelah-janan-rasheed-kite"
         },
         {
             date: "July 24",
