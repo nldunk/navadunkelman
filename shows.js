@@ -26,6 +26,13 @@ const showsData = {
             moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
         },
         {
+            date: "September 3",
+            time: "9:00PM",
+            title: "IMA, <i>TOPOS 2026 Music Festival</i>",
+            location: "EMPAC, Troy, NY",
+            moreInfo: "https://empac.rpi.edu/events/2026/topos#dates-and-tickets"
+        },
+        {
             date: "September 4",
             time: "8:30PM",
             title: "Trio with Erik Friedlander and Myk Freedman",
