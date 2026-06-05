@@ -30,7 +30,7 @@ const showsData = {
             time: "TBA",
             title: "NOMON <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
             location: "Lincoln Center, New York, NY",
-            moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
+            moreInfo: "https://massmoca.org/event/bang-on-a-can-loud-weekend-2026/"
         },
         {
             date: "September 3",
