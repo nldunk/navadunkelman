@@ -28,8 +28,8 @@ const showsData = {
         {
             date: "July 30-August 1 (EXACT DATE TBA)",
             time: "TBA",
-            title: "NOMON <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
-            location: "Lincoln Center, New York, NY",
+            title: "NOMON, <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
+            location: "Mass MoCA, North Adams, MA",
             moreInfo: "https://massmoca.org/event/bang-on-a-can-loud-weekend-2026/"
         },
         {
