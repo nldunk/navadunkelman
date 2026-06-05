@@ -26,6 +26,13 @@ const showsData = {
             moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
         },
         {
+            date: "July 30-August 1 (EXACT DATE TBA)",
+            time: "TBA",
+            title: "NOMON <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
+            location: "Lincoln Center, New York, NY",
+            moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
+        },
+        {
             date: "September 3",
             time: "9:00PM",
             title: "IMA, <i>TOPOS Music Festival 2026</i>",
