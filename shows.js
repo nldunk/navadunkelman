@@ -5,18 +5,10 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "May 28",
-            time: "7:30PM",
-            title: "<i>The Color of Pomegranates (1969)</i> Fundraising Film Screening Party",
-            location: "MITU580, Brooklyn, NY",
-            moreInfo: "https://theatermitu.ticketspice.com/mituthecolorofpomegranates"
-        },
-        {
-            date: "May 30",
-            time: "4:00PM",
-            title: "<i>Four Handdreamers</i> with JJJJJerome Ellis, Robbie Wing, and Kite",
-            location: "MoMA PS1, Queens, NY",
-            moreInfo: "https://www.momaps1.org/en/events/750-tom-thayer-chang-yuchen-kameelah-janan-rasheed-kite"
+            date: "June 14",
+            time: "10:00AM",
+            title: "<i>Metropolis Ensemble Biophony Project</i> with Laura Cocks, lee hooper, Charlotte Mundy, and Shara Lunon",
+            location: "Tudor City Bridge, New York, NY",
         },
         {
             date: "July 24",
