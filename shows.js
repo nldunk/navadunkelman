@@ -11,6 +11,12 @@ const showsData = {
             location: "Tudor City Bridge, New York, NY",
         },
         {
+            date: "June 27",
+            time: "5PM",
+            title: "<i>ZID</i> with Sheherazaad and Sonya Belaya",
+            location: "Fulton Street Collective, Chicago, IL",
+        },
+        {
             date: "July 24",
             time: "2:00PM and 7:00PM",
             title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss (Shayna Dunkelman, Grey McMurray, Aakash Mittal)',
