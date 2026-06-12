@@ -13,7 +13,7 @@ const showsData = {
         {
             date: "June 27",
             time: "5PM",
-            title: "<i>ZID</i> with Sheherazaad and Sonya Belaya",
+            title: "<i>ZID, a musical showcase</i> with Sheherazaad and Sonya Belaya",
             location: "Fulton Street Collective, Chicago, IL",
         },
         {
