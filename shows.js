@@ -4,17 +4,13 @@
 
 const showsData = {
     upcoming2026: [
+
         {
-            date: "June 14",
-            time: "10:00AM",
-            title: "<i>Metropolis Ensemble Biophony Project</i> with Laura Cocks, lee hooper, Charlotte Mundy, and Shara Lunon",
-            location: "Tudor City Bridge, New York, NY",
-        },
-        {
-            date: "June 27",
-            time: "5PM",
-            title: "<i>ZID, a musical showcase</i> with Sheherazaad and Sonya Belaya",
-            location: "Fulton Street Collective, Chicago, IL",
+            date: "July 18",
+            time: "6:00PM",
+            title: "NOMON, <i>WISE Revolutions mini-fest</i> Night 1",
+            location: "Future Space Studios, Ridgewood, NY",
+            moreInfo: "https://www.futurespace.studio/events/wise-revolutions-mini-fest-night-1"
         },
         {
             date: "July 24",
@@ -24,8 +20,8 @@ const showsData = {
             moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
         },
         {
-            date: "July 30-August 1 (EXACT DATE TBA)",
-            time: "TBA",
+            date: "July 31",
+            time: "8:30PM",
             title: "NOMON, <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
             location: "Mass MoCA, North Adams, MA",
             moreInfo: "https://massmoca.org/event/bang-on-a-can-loud-weekend-2026/"
