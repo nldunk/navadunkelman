@@ -27,6 +27,13 @@ const showsData = {
             moreInfo: "https://massmoca.org/event/bang-on-a-can-loud-weekend-2026/"
         },
         {
+            date: "August 6",
+            time: "7:30PM",
+            title: "NOMON",
+            location: "Asian Arts Initiative, Philadelphia, PA",
+            moreInfo: "https://asianartsinitiative.org/programs/concert-nomon"
+        },
+        {
             date: "September 3",
             time: "9:00PM",
             title: "IMA, <i>TOPOS Music Festival 2026</i>",
