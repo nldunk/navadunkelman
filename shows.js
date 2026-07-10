@@ -7,7 +7,7 @@ const showsData = {
 
         {
             date: "July 18",
-            time: "6:00PM",
+            time: "5:00PM",
             title: "NOMON, <i>WISE Revolutions mini-fest</i> Night 1",
             location: "Future Space Studios, Ridgewood, NY",
             moreInfo: "https://www.futurespace.studio/events/wise-revolutions-mini-fest-night-1"
