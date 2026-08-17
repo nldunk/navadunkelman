@@ -21,7 +21,7 @@ const showsData = {
         {
             date: "September 7",
             time: "7:30PM",
-            title: "<i>Striped Light</i>Duo with Brandon Seabrook",
+            title: "<i>Striped Light</i>, Duo with Brandon Seabrook",
             location: "Long Island City, NY",
             moreInfo: "https://empac.rpi.edu/events/2026/topos#dates-and-tickets"
         },
