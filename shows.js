@@ -16,7 +16,7 @@ const showsData = {
             time: "9:00PM",
             title: "IMA, <i>TOPOS Music Festival 2026</i>",
             location: "EMPAC, Troy, NY",
-            moreInfo: "https://empac.rpi.edu/events/2026/topos#dates-and-tickets"
+            moreInfo: "https://empac.rpi.edu/events/2026/topos/petals-burst-flames"
         },
         {
             date: "September 7",
