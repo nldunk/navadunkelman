@@ -7,7 +7,7 @@ const showsData = {
         {
             date: "August 23",
             time: "11:00AM",
-            title: "<i>Summer Tea 2026</i> Solo",
+            title: "<i>Summer Tea 2026</i>, Solo",
             location: "Prospect Park, Brooklyn, NY",
             moreInfo: "https://teaartsculture.org/events/summer-tea-2026-27nec"
         },
@@ -32,6 +32,13 @@ const showsData = {
             location: "Theaterlab, New York, NY",
             moreInfo: "https://theaterlabnyc.com/maria-takeuchi-score-for-trees-sept-11-12-26/"
         },
+        {
+            date: "September 18",
+            time: "8:30PM",
+            title: "Quartet Sana Nagano, Ikue Mori, Trevor Dunn",
+            location: "The Stone, New York, NY",
+        },
+
         {
             date: "November 6",
             time: "8:30PM",
