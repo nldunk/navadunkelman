@@ -4,34 +4,12 @@
 
 const showsData = {
     upcoming2026: [
-
         {
-            date: "July 18",
-            time: "5:00PM",
-            title: "NOMON, <i>WISE Revolutions mini-fest</i> Night 1",
-            location: "Future Space Studios, Ridgewood, NY",
-            moreInfo: "https://www.futurespace.studio/events/wise-revolutions-mini-fest-night-1"
-        },
-        {
-            date: "July 24",
-            time: "2:00PM and 7:00PM",
-            title: '<i>THE OCEAN ETCHED IN THE FOREST</i>, with Du Yun\'s OK Miss (Shayna Dunkelman, Grey McMurray, Aakash Mittal)',
-            location: "Lincoln Center, New York, NY",
-            moreInfo: "https://www.lincolncenter.org/series/summer-for-the-city/the-ocean-etched-in-the-forest-297"
-        },
-        {
-            date: "July 31",
-            time: "8:30PM",
-            title: "NOMON, <i>BANG ON A CAN LOUD WEEKEND 2026</i>",
-            location: "Mass MoCA, North Adams, MA",
-            moreInfo: "https://massmoca.org/event/bang-on-a-can-loud-weekend-2026/"
-        },
-        {
-            date: "August 6",
-            time: "7:30PM",
-            title: "NOMON",
-            location: "Asian Arts Initiative, Philadelphia, PA",
-            moreInfo: "https://asianartsinitiative.org/programs/concert-nomon"
+            date: "August 23",
+            time: "11:00AM",
+            title: "<i>Summer Tea 2026</i> Solo",
+            location: "Prospect Park, Brooklyn, NY",
+            moreInfo: "https://teaartsculture.org/events/summer-tea-2026-27nec"
         },
         {
             date: "September 3",
@@ -41,10 +19,18 @@ const showsData = {
             moreInfo: "https://empac.rpi.edu/events/2026/topos#dates-and-tickets"
         },
         {
-            date: "September 4",
-            time: "8:30PM",
-            title: "Trio with Erik Friedlander and Myk Freedman",
-            location: "The Stone, New York, NY",
+            date: "September 7",
+            time: "7:30PM",
+            title: "<i>Striped Light</i>Duo with Brandon Seabrook",
+            location: "Long Island City, NY",
+            moreInfo: "https://empac.rpi.edu/events/2026/topos#dates-and-tickets"
+        },
+        {
+            date: "September 11 & 12",
+            time: "7:30PM",
+            title: "<i>Maria Takeuchi, score for trees</i> with Henry Fraser, rocío sánchez, and che ali",
+            location: "Theaterlab, New York, NY",
+            moreInfo: "https://theaterlabnyc.com/maria-takeuchi-score-for-trees-sept-11-12-26/"
         },
         {
             date: "November 6",
