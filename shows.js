@@ -5,10 +5,11 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "September 18",
-            time: "8:30PM",
-            title: "Quartet Sana Nagano, Ikue Mori, Trevor Dunn",
-            location: "The Stone, New York, NY",
+            date: "October 3",
+            time: "Time TBA",
+            title: "Duo with Payton MacDonald",
+            location: "Prinston Public Library, Princeton, NJ",
+            moreInfo: "http://princetonlibrary.libnet.info/event/17224899"
         },
         {
             date: "October 14",
