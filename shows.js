@@ -5,13 +5,6 @@
 const showsData = {
     upcoming2026: [
         {
-            date: "October 3",
-            time: "Time TBA",
-            title: "Duo with Payton MacDonald",
-            location: "Prinston Public Library, Princeton, NJ",
-            moreInfo: "http://princetonlibrary.libnet.info/event/17224899"
-        },
-        {
             date: "October 14",
             time: "8:30PM",
             title: "Contemporary East: Ikue Mori, Charmaine Lee, Nava Dunkelman, Reggie Nicholson, Yuko Fujiyama",
