@@ -38,9 +38,16 @@ const showsData = {
         location: "The Stone, New York, NY",
     },
     {
-        date: "April 1-4",
+        date: "April 1",
         time: "TBA",
         title: "NOMON: Big Ears Festival 2027",
+        location: "Knoxville, TN",
+        moreInfo: "https://bigearsfestival.org"
+    },
+    {
+        date: "April 1",
+        time: "TBA",
+        title: "With Sheherazaad and Sonya Belaya: Big Ears Festival 2027",
         location: "Knoxville, TN",
         moreInfo: "https://bigearsfestival.org"
     }],
