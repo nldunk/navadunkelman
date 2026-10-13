@@ -46,14 +46,14 @@ const showsData = {
     },
     {
         date: "April 1",
-        time: "TBA",
+        time: "Time TBA",
         title: "NOMON: Big Ears Festival 2027",
         location: "Knoxville, TN",
         moreInfo: "https://bigearsfestival.org"
     },
     {
         date: "April 1",
-        time: "TBA",
+        time: "Time TBA",
         title: "With Sheherazaad and Sonya Belaya: Big Ears Festival 2027",
         location: "Knoxville, TN",
         moreInfo: "https://bigearsfestival.org"
