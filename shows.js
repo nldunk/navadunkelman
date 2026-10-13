@@ -18,6 +18,13 @@ const showsData = {
             location: "The Stone, New York, NY",
         },
         {
+            date: "November 7",
+            time: "8:00PM",
+            title: "<i>rocío sánchez: Caminos</i> with rocío sánchez, che Ali, and Henry Fraser",
+            location: "Issue Project Room, Brooklyn, NY",
+            moreInfo: "https://issueprojectroom.org/event/rocio-sanchez-caminos"
+        },
+        {
             date: "December 10",
             time: "8:30PM",
             title: "Trio with Ikue Mori and gabby fluke-mogul",
